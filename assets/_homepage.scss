@@ -1,0 +1,245 @@
+.account-icon, .mobile-tools .account {
+	display: none;
+}
+
+
+
+.main-header .bg {
+	background: $white;
+}
+
+.main-header {
+	.top.row {
+		padding-top: 20px;
+		padding-bottom: 5px; 
+	}
+	.bottom-row {
+		padding-bottom: 5px;
+		border-bottom: 1px solid $gray;
+	}
+	.main-menu {
+		.widescreen {
+			margin: 0;
+			> ul > li > a {
+				font-family: $nexa-heavy;
+				font-size: 15px;
+				color: $brown;
+				&:hover {
+					color: $hovercolor;
+				}
+			}
+		}
+	}
+	.icomoon {
+		font-size: 15px;
+		color: $brown;
+		&:hover {
+			color: $hovercolor;
+		}
+	}
+	.search-account {
+		.meuu {
+			.account.glyph {
+				margin-left: 4px;
+			}			
+		}	
+		a, a:link {
+			font-family: $nexa-bold;
+			color: $brown;
+			font-size: 11px;
+			text-transform: uppercase;
+		}
+		a {
+			&:hover {
+				color: $hovercolor;
+			}
+		}
+	}
+	.mobile-tools {
+		a {
+			color: $brown;
+			&.cart {
+				img {
+					margin-top: -7px;
+				}
+			}
+		}
+	}
+	.mobile-menu {
+		ul {
+			text-align: center;
+		}
+		.nav-item {
+			a {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.glyph {
+	img {
+		margin-right: 4px;
+	}
+	&.account {
+		&:before {
+			content: "";
+		}
+	}
+	&.cart {
+		&:before {
+			content: "";
+		}
+	}
+}
+
+.homepage-quote {
+	h2 {
+		font-family: $nexaslab-book;
+		color: $brown;
+		font-size: 25px;
+		font-weight: normal;
+  	line-height: 33px;
+		margin: 0 auto;
+		padding: 50px 20px;
+		text-align: center;
+		text-transform: none;
+		span {
+			font-family: $nexaslab-book-italic;
+			font-size: 17px;
+		}
+	}
+}
+
+.main-footer {
+	background: $brown;
+	color: $white;
+	padding-top: 40px;
+	a, a:link {
+		color: $white;
+		text-transform: uppercase;
+		padding-left: 7px;
+	}
+	h2.title {
+		font-family: $nexa-book;
+		text-transform: none;
+		margin-bottom: 0;
+	}
+	.column-3 {
+		.contact-form {
+			input[type="email"], .mailchimp-form input[type="email"] {
+				font-family: $nexa-book!important;
+				float: left;
+			}
+			input[type="submit"] {
+				float: left;
+			}
+		}
+	}
+}
+
+.template-index {
+	.widgets {
+		.small-promos {
+			img {
+				-webkit-transition: opacity .5s ease-in-out;
+			  -moz-transition: opacity .5s ease-in-out;
+			  -ms-transition: opacity .5s ease-in-out;
+			  -o-transition: opacity .5s ease-in-out;
+			  transition: opacity .5s ease-in-out;
+			  opacity: 1;
+			  &.dim {
+			  	opacity: 0.5;
+			  }
+			}
+			.caption {
+				display: block;
+				.bg {
+					background: none;
+				}
+				.inner {
+					padding: 20px;
+				  background: rgba(66,45,17,0.9);
+				  width: 80%;
+				  left: 50%;
+				  margin-left: -40%;
+				  margin-top: -57.5px;
+					h1 {
+						color: $pink;
+						font-size: 13px;
+						line-height: 15px;
+					}
+					h2 {
+						font-family: $nexa-book;
+						color: $white;
+						font-size: 25px;
+						line-height: 25px;
+						text-transform: none;
+					}
+				}
+			}
+		}
+	}
+	.social-feeds {
+		h3.title {
+			font-family: $nexa-heavy;
+			font-size: 30px;
+			line-height: 34px;
+			font-weight: normal;
+		}
+	}
+	.slider {
+		.slide {
+			img {
+			  width: 200%;
+			  max-width: none;
+			  margin-left: -75%;
+			}
+			.caption {
+				width: 100%;
+				margin: 0 auto;
+				text-align: center!important;
+				float: none!important;
+				.bg {
+					background: none;
+				}
+				h2.title {
+					font-family: $nexa-heavy;
+					color: $brown;
+					font-size: 32px;
+					line-height: 32px;
+					font-weight: 100;
+					max-width: none;
+					margin-bottom: 0;
+					margin-top: 10px;
+					span {
+						font-family: $nexa-book;
+					}
+				}
+				h3.sub-title {
+					font-family: $nexa-book;
+					color: $brown;
+					font-size: 14px;
+					line-height: 18px;
+					text-transform: none;
+					max-width: none;
+					margin-bottom: 30px;
+					margin-top: 10px;
+				}
+				a.button {
+					font-family: $nexa-heavy;
+					background: $pink;
+					font-size: 15px;
+					line-height: 12px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					width: 200px;
+					border-radius: 4px;
+					&:hover {
+						background: $pinkhover;
+					}
+				}
+			}
+		}
+	}
+}

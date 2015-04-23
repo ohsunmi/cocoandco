@@ -1,0 +1,580 @@
+@media only screen and (min-width: 768px) {
+	.template-index {
+		.widgets {
+			.small-promos {
+				.caption {
+					.bg {
+					}
+					.inner {
+						width: 90%;
+						margin-left: -45%;
+					}
+				}
+			}
+		}
+	}
+	.main-footer {
+		.column-2 {
+			.footer-nav {
+				li {
+					margin-bottom: 7px;
+					a {
+						&:hover {
+							color: $hovercolor;
+						}
+					}
+				}
+			}
+		}
+	}
+	.template-index {
+		.slider {
+			.slide {
+				img {
+				  width: 100%;
+				  max-width: 100%;
+				  margin-left: 0;
+				}
+				.caption {
+					max-width: 400px;
+					margin-left: 16%;
+					text-align: left!important;
+					float: left!important;
+					h2.title {
+						font-size: 36px;
+						line-height: 38px;
+						max-width: 200px;
+						margin-top: 69px;
+					}
+					h3.sub-title {
+						font-size: 13px;
+						line-height: 20px;
+						max-width: 187px;
+						margin-bottom: 17px;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+	.page-our-story {
+		.main-footer {
+			margin-top: 50px;
+		}
+	}
+	.page-tiki-carts {
+		.main-footer {
+			margin-top: 50px;
+		}
+	}
+	.banner {
+		height: 600px;
+		height: 600px;
+		h1 {
+			font-size: 57px;
+			line-height: 57px;
+		}
+		h5 {
+			font-size: 20px;
+			line-height: 25px;
+		}
+	}
+	.line {
+		margin: 50px 0;
+		h1 {
+			font-size: 48px;
+			line-height: 57px;
+		}
+		h2 {
+			font-size: 51px;
+			line-height: 51px;
+			margin-top: 80px;
+		}
+		.quote-line {
+			padding: 0 50px;
+			margin-top: 80px;
+		}
+		p {
+			font-size: 22px;
+			line-height: 32px;
+			&.quote {
+				margin-left: 50%;
+			}
+		}
+		.contact {
+			margin: 20px 40px 0 0;
+		}
+	}
+	.intro {
+		p {
+			font-size: 22px;
+			line-height: 32px;
+		}
+	}
+	.template-product {
+		article {
+			padding-top: 50px;
+			padding-bottom: 100px;
+			h1 {
+				font-size: 57px;
+				line-height: 57px;
+			}
+			.prices {
+				margin-bottom: 20px;
+				.actual-price {
+					font-size: 38px;
+					line-height: 38px;
+				}
+				.compare-price {
+					font-size: 38px;
+					line-height: 38px;
+				}
+			}
+			.description {
+				p {
+					font-size: 18px;
+					line-height: 26px;
+				}
+				.extra-info {
+					li {
+						width: 40%;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.cart-form {
+			.variants {
+				margin-top: 100px;
+			}
+		}
+		.ingredients {
+			p {
+				font-size: 18px;
+				line-height: 26px;
+			}
+			.intro {
+				margin-bottom: 20px;
+				h1 {
+					font-size: 57px;
+					line-height: 57px;
+				}
+				p {
+					font-size: 22px;
+					line-height: 29px;
+				}
+			}
+		}
+		.benefits {
+			padding: 50px 0;
+			.intro {
+				margin-bottom: 0px;
+				h1 {
+					font-size: 57px;
+					line-height: 57px;
+					margin-bottom: 60px;
+				}
+				p {
+					font-size: 22px;
+					line-height: 29px;
+				}
+			}
+			.row {
+				.columns {
+					.copy {
+						p {
+							font-size: 18px;
+							line-height: 26px;
+						}
+					}
+				}
+			}
+		}
+		.how-to-eat {
+			.intro {
+				margin-top: 40px;
+				margin-bottom: 80px;
+				h1 {
+					font-size: 57px;
+					line-height: 57px;
+					margin-bottom: 60px;
+				}
+				p {
+					font-size: 22px;
+					line-height: 29px;
+				}
+				.row {
+					margin: 80px 0;
+				}
+			}
+		}
+	}
+	.slider {
+		.controls {
+			height: 220px;
+			margin-top: -110px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.template-product {
+		.ingredients {
+			.intro {
+				margin-bottom: 80px;
+			}
+			.row {
+				margin: 10px auto;
+				.columns {
+					padding: 0;
+					&.left-text {
+						padding-left: 2%;
+					}
+					&.right-text {
+						padding-right: 2%;
+					}
+					img {
+						position: absolute;
+						max-width: none;
+					}
+					&.img-right img {
+						float: none;
+					}
+					&.img-left img {
+						float: none;
+					}
+				}
+				&.coconut {
+					img {
+						width: 138%;
+						max-width: none;
+						top: -62px;
+					}
+				}
+				&.cardamom {
+					img {
+						top: -13px;
+						max-width: none;
+					}
+				}
+				&.cinnamon {
+					img {
+						top: 80px;	
+						max-width: none;
+					}
+				}
+				&.cloves {
+					img {
+						top: 0px;	
+						max-width: none;
+					}
+				}
+				&.nutmeg {
+					img {
+						top: 78px;	
+						max-width: none;
+					}
+				}
+				&.honey {
+					img {
+						top: 5px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 890px) {
+	.template-index {
+		.slider {
+			.slide {
+				.caption {
+					h2.title {
+						font-size: 47px;
+						line-height: 47px;
+						max-width: 300px;
+						margin-top: 40px;
+					}
+					h3.sub-title {
+						font-size: 17px;
+						line-height: 22px;
+						max-width: 200px;
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.template-index {
+		.widgets {
+			.small-promos {
+				.caption {
+					.bg {
+					}
+					.inner {
+						width: 300px;
+						margin-left: -150px;
+					}
+				}
+			}
+		}
+	}
+	.template-product {
+		.ingredients {
+			.intro {
+				margin-bottom: 20px;
+			}
+			.row {
+				margin: 50px auto;
+				.columns {
+					&.left-text {
+						padding-left: 10%;
+					}
+					&.right-text {
+						padding-right: 10%;
+					}
+				}
+				&.coconut {
+					img {
+						top: -2px;
+					}
+				}
+				&.cardamom {
+					img {
+						top: -49px;	
+					}
+				}
+				&.cinnamon {
+					img {
+						top: 42px;	
+					}
+				}
+				&.cloves {
+					img {
+						top: -37px;	
+					}
+				}
+				&.nutmeg {
+					img {
+						top: 24px;	
+					}
+				}
+				&.honey {
+					img {
+						top: -57px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.template-index {
+		.slider {
+			.slide {
+				.caption {
+					h2.title {
+						font-size: 47px;
+						line-height: 50px;
+						margin-top: 63px;
+					}
+					h3.sub-title {
+						font-size: 22px;
+					  line-height: 26px;
+					  max-width: 280px;
+					  margin-bottom: 50px;
+					}
+					a.button {
+						font-size: 18px;
+						line-height: 15px;
+					}
+				}
+			}
+		}
+	}
+	.template-product {
+		.ingredients {
+			.row {
+				&.coconut {
+					img {
+						top: -91px;
+					}
+				}
+				&.cardamom {
+					img {
+						top: -24px;
+					}
+				}
+				&.honey {
+					img {
+						top: -44px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.template-index {
+		.slider {
+			.slide {
+				.caption {
+					h2.title {
+						font-size: 57px;
+						line-height: 57px;
+						margin-top: 46px;
+					}
+					h3.sub-title {
+						font-size: 23px;
+						line-height: 29px;
+						max-width: 280px;
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.template-index {
+		.slider {
+			.slide {
+				.caption {
+					.bg {
+					}
+					h2.title {
+						font-size: 57px;
+						line-height: 57px;
+						margin-top: 20px;
+					}
+					h3.sub-title {
+						font-size: 25px;
+						line-height: 30px;
+						max-width: none;
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+	.template-product {
+		.ingredients {
+			.intro {
+				margin-bottom: 80px;
+			}
+			.row {
+				margin: 100px auto;
+				&.coconut {
+					img {
+						width: 138%;
+						top: -98px;
+					}
+				}
+				&.cardamom {
+					img {
+						top: -83px;	
+					}
+				}
+				&.cinnamon {
+					img {
+						top: -10px;	
+					}
+				}
+				&.cloves {
+					img {
+						top: -92px;	
+					}
+				}
+				&.nutmeg {
+					img {
+						top: -29px;	
+					}
+				}
+				&.honey {
+					img {
+						top: -90px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.template-product {
+		.ingredients {
+			.row {
+				margin: 120px auto;
+				&.coconut {
+					margin-top: 0;
+					img {
+						width: 118%;
+						top: -40px;
+					}
+				}
+				&.cardamom {
+					img {
+						top: -101px;	
+					}
+				}
+				&.cinnamon {
+					img {
+						top: -30px;	
+					}
+				}
+				&.cloves {
+					img {
+						top: -103px;	
+					}
+				}
+				&.nutmeg {
+					img {
+						top: -25px;	
+					}
+				}
+				&.honey {
+					img {
+						top: -116px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1350px) {
+	.template-product {
+		.ingredients {
+			.row {
+				&.coconut {
+					img {
+						top: -94px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1490px) {
+	.template-product {
+		.ingredients {
+			.row {
+				&.coconut {
+					img {
+						width: 107%;
+						top: -99px;
+					}
+				}
+			}
+		}
+	}
+}

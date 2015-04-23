@@ -1,0 +1,1168 @@
+/*
+========================================================================================
+
+BASE
+
+----------------------------------------------------------------------------------------
+
+Contents:
+
+  - Variables
+  - Mixins
+  - General
+  - Viewport Fixes
+  - Links
+  - Media
+  - Headers
+  - Wrapper
+  - Text selection
+  - Animations
+
+======================================================================================== */
+/* - General ----------------------------------------------------------------------------- */
+/* line 168, styles.gift-card.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-print-color-adjust: exact;
+}
+
+/* line 173, styles.gift-card.scss */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 180, styles.gift-card.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+/* - Viewport Fixes --------------------------------------------------------------------- */
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* - Links ----------------------------------------------------------------------------- */
+/* line 194, styles.gift-card.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Buttons */
+/* line 201, styles.gift-card.scss */
+.btn {
+  background-color: #58686f;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: 1.5em;
+  font-size: .875em;
+  line-height: 1;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+/* line 212, styles.gift-card.scss */
+.btn:hover {
+  background-color: #414d53;
+}
+
+/* - Media ----------------------------------------------------------------------------- */
+/* line 219, styles.gift-card.scss */
+img, video, object {
+  max-width: 100%;
+  display: block;
+}
+
+/* - Headers --------------------------------------------------------------------------- */
+/* line 226, styles.gift-card.scss */
+h2 {
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: 600;
+  color: #58686f;
+}
+
+/* line 231, styles.gift-card.scss */
+h4 {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: normal;
+  font-size: .875em;
+  color: #999;
+  margin: 0;
+}
+
+/* - Wrapper --------------------------------------------------------------------------- */
+/* line 238, styles.gift-card.scss */
+.wrap {
+  width: 95%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+/* line 108, styles.gift-card.scss */
+.wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* - Text selection -------------------------------------------------------------------- */
+/* line 246, styles.gift-card.scss */
+::-moz-selection {
+  background-color: #34aadc;
+  color: #fff;
+}
+
+/* line 247, styles.gift-card.scss */
+::selection {
+  background-color: #34aadc;
+  color: #fff;
+}
+
+/* - Animations ------------------------------------------------------------------------ */
+@-webkit-keyframes slideup {
+  /* line 252, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px) rotate(10deg);
+  }
+
+  /* line 253, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 254, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  /* line 255, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+  }
+}
+
+@-moz-keyframes slideup {
+  /* line 252, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px) rotate(10deg);
+  }
+
+  /* line 253, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 254, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  /* line 255, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+  }
+}
+
+@-ms-keyframes slideup {
+  /* line 252, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px) rotate(10deg);
+  }
+
+  /* line 253, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 254, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  /* line 255, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes slideup {
+  /* line 252, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px) rotate(10deg);
+  }
+
+  /* line 253, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 254, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  /* line 255, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes popup {
+  /* line 259, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  /* line 260, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+  }
+
+  /* line 261, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(2px);
+  }
+
+  /* line 262, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes popup {
+  /* line 259, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  /* line 260, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+  }
+
+  /* line 261, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(2px);
+  }
+
+  /* line 262, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes popup {
+  /* line 259, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  /* line 260, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+  }
+
+  /* line 261, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(2px);
+  }
+
+  /* line 262, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes popup {
+  /* line 259, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  /* line 260, styles.gift-card.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+  }
+
+  /* line 261, styles.gift-card.scss */
+  80% {
+    -webkit-transform: translateY(2px);
+  }
+
+  /* line 262, styles.gift-card.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes container-slide {
+  /* line 266, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 267, styles.gift-card.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes container-slide {
+  /* line 266, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 267, styles.gift-card.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes container-slide {
+  /* line 266, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 267, styles.gift-card.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes container-slide {
+  /* line 266, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 267, styles.gift-card.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* line 271, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 272, styles.gift-card.scss */
+  100% {
+    opacity: 100;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* line 271, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 272, styles.gift-card.scss */
+  100% {
+    opacity: 100;
+  }
+}
+
+@-ms-keyframes fadein {
+  /* line 271, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 272, styles.gift-card.scss */
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes fadein {
+  /* line 271, styles.gift-card.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 272, styles.gift-card.scss */
+  100% {
+    opacity: 100;
+  }
+}
+
+/*
+========================================================================================
+
+LAYOUT
+
+----------------------------------------------------------------------------------------
+
+Contents:
+
+  - Header
+  - Gift card
+  - Footer
+
+======================================================================================== */
+/* - Header ---------------------------------------------------------------------------- */
+/* line 292, styles.gift-card.scss */
+#header {
+  text-align: center;
+  padding: 3em 0;
+  -webkit-animation: fadein 0.5s ease-in-out both 0.4s;
+  -moz-animation: fadein 0.5s ease-in-out both 0.4s;
+  animation: fadein 0.5s ease-in-out both 0.4s;
+}
+
+/* line 298, styles.gift-card.scss */
+.logo {
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #bfbfbf;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 303, styles.gift-card.scss */
+.logo:hover {
+  color: #999999;
+}
+
+/* line 306, styles.gift-card.scss */
+.logo img {
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+/* line 311, styles.gift-card.scss */
+.shop-url {
+  display: none;
+}
+
+/* - Gift Card ------------------------------------------------------------------------- */
+/* Gift Card container */
+/* line 319, styles.gift-card.scss */
+main {
+  -webkit-animation: slideup 0.8s ease-in-out;
+  -moz-animation: slideup 0.8s ease-in-out;
+  animation: slideup 0.8s ease-in-out;
+}
+
+/* line 323, styles.gift-card.scss */
+#gift-card-outer-container {
+  background-color: #34aadc;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  padding: 1em;
+  -webkit-animation: container-slide 0.8s ease-in-out;
+  -moz-animation: container-slide 0.8s ease-in-out;
+  animation: container-slide 0.8s ease-in-out;
+}
+
+/* line 331, styles.gift-card.scss */
+#gift-card-inner-container {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  -webkit-animation: cardslide 0.8s ease-in-out;
+  -moz-animation: cardslide 0.8s ease-in-out;
+  animation: cardslide 0.8s ease-in-out;
+}
+/* line 108, styles.gift-card.scss */
+#gift-card-inner-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header */
+/* line 341, styles.gift-card.scss */
+#gift-card-header {
+  border-bottom: 1px solid #f2f2f2;
+  padding: .75em;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 349, styles.gift-card.scss */
+#gift-card-header h2 {
+  float: left;
+  margin: .12em 0;
+}
+
+/* line 354, styles.gift-card.scss */
+.tag {
+  background-color: #bfbfbf;
+  padding: .5em;
+  padding-bottom: .35em;
+  border-radius: 4px;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #FFF;
+  line-height: 1;
+}
+
+/* line 361, styles.gift-card.scss */
+.tag.light {
+  background: transparent;
+  color: #bfbfbf;
+  border: 1px solid #d9d9d9;
+}
+
+/* line 367, styles.gift-card.scss */
+#gift-card-header .tag {
+  float: right;
+}
+
+/* To/From */
+/* line 373, styles.gift-card.scss */
+#gift-card-tofrom {
+  list-style-type: none;
+  padding: 1em .75em 0;
+  margin: 0;
+}
+
+/* line 378, styles.gift-card.scss */
+#gift-card-tofrom li {
+  padding: .5em 0;
+}
+/* line 108, styles.gift-card.scss */
+#gift-card-tofrom li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 383, styles.gift-card.scss */
+#gift-card-tofrom h4 {
+  float: left;
+  width: 5em;
+}
+
+/* line 388, styles.gift-card.scss */
+#gift-card-tofrom a {
+  float: left;
+  font-weight: 600;
+  color: #58686f;
+}
+/* line 392, styles.gift-card.scss */
+#gift-card-tofrom a:hover {
+  color: #34aadc;
+}
+
+/* Card holder */
+/* line 397, styles.gift-card.scss */
+#gift-card-holder {
+  margin: .75em;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  position: relative;
+}
+
+/* line 404, styles.gift-card.scss */
+#gift-card-holder .corner {
+  display: block;
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 411, styles.gift-card.scss */
+#gift-card-holder .corner.top-left {
+  background: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/corner-top-left.gift-card.png?7902367800288418226) 0 0 no-repeat;
+  top: -1px;
+  left: -1px;
+}
+/* line 116, styles.gift-card.scss */
+.svg #gift-card-holder .corner.top-left {
+  background: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/corner-top-left.gift-card.svg?7902367800288418226) 0 0 no-repeat;
+}
+
+/* line 123, styles.gift-card.scss */
+.no-borderradius #gift-card-holder .corner.top-right {
+  background: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/corner-top-right.gift-card.png?7902367800288418226) 0 0 no-repeat;
+  top: 0px;
+  right: 0px;
+  width: 7px;
+  height: 7px;
+}
+
+/* line 123, styles.gift-card.scss */
+.no-borderradius #gift-card-holder .corner.bottom-left {
+  background: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/corner-bottom-left.gift-card.png?7902367800288418226) 0 0 no-repeat;
+  bottom: 0px;
+  left: 0px;
+  width: 7px;
+  height: 7px;
+}
+
+/* line 433, styles.gift-card.scss */
+#gift-card-holder .corner.bottom-right {
+  background: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/corner-bottom-right.gift-card.png?7902367800288418226) 0 0 no-repeat;
+  bottom: -1px;
+  right: -1px;
+}
+/* line 116, styles.gift-card.scss */
+.svg #gift-card-holder .corner.bottom-right {
+  background: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/corner-bottom-right.gift-card.svg?7902367800288418226) 0 0 no-repeat;
+}
+
+/* line 440, styles.gift-card.scss */
+#gift-card {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 133, styles.gift-card.scss */
+#gift-card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+
+/* line 446, styles.gift-card.scss */
+#gift-card img {
+  border-radius: 10px;
+}
+
+/* line 450, styles.gift-card.scss */
+#gift-card-code-outer {
+  position: absolute;
+  bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+/* line 455, styles.gift-card.scss */
+#gift-card-code-outer.medium {
+  font-size: .875em;
+}
+/* line 456, styles.gift-card.scss */
+#gift-card-code-outer.small {
+  font-size: .75em;
+}
+
+/* line 460, styles.gift-card.scss */
+#gift-card-code-inner {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background-color: #fff;
+  padding: .5em;
+  border-radius: 4px;
+  max-width: 450px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+/* line 468, styles.gift-card.scss */
+.small #gift-card-code-inner {
+  overflow: auto;
+}
+
+/* line 471, styles.gift-card.scss */
+#gift-card-code-inner strong {
+  font-weight: 400;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px dashed #e5e5e5;
+  padding: .4em .5em;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  color: #777;
+  line-height: 1;
+}
+/* line 479, styles.gift-card.scss */
+.disabled #gift-card-code-inner strong {
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* line 482, styles.gift-card.scss */
+#gift-card-code-inner span + span {
+  margin-left: .25em;
+}
+
+/* line 486, styles.gift-card.scss */
+#gift-card-amount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 2.75em;
+  padding: .4em .5em;
+}
+
+/* line 493, styles.gift-card.scss */
+#gift-card-amount.medium {
+  font-size: 2.25em;
+}
+
+/* line 497, styles.gift-card.scss */
+#gift-card-amount strong {
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* line 503, styles.gift-card.scss */
+.tooltip {
+  position: relative;
+}
+
+/* line 507, styles.gift-card.scss */
+.tooltip-container {
+  display: block;
+  position: absolute;
+  top: -100%;
+  right: 50%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-animation: popup 0.5s ease-in-out both 0.7s;
+  -moz-animation: popup 0.5s ease-in-out both 0.7s;
+  animation: popup 0.5s ease-in-out both 0.7s;
+  top: -50%;
+  margin-top: .25em;
+}
+/* line 517, styles.gift-card.scss */
+.tooltip:hover .tooltip-container {
+  display: block;
+}
+
+/* line 520, styles.gift-card.scss */
+.tooltip-triangle {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 5px solid #333;
+  border-top: 5px solid rgba(51, 51, 51, 0.9);
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  margin-left: -5px;
+  margin-bottom: -5px;
+}
+
+/* line 534, styles.gift-card.scss */
+.tooltip-label {
+  display: block;
+  position: relative;
+  right: -50%;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  background: rgba(51, 51, 51, 0.9);
+  min-height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 16px;
+  text-shadow: none;
+  padding: .5em .75em;
+  margin-left: .25em;
+}
+
+/* line 546, styles.gift-card.scss */
+#gift-card-amount .tooltip-label {
+  font-size: .4em;
+  color: #fff;
+}
+
+/* line 551, styles.gift-card.scss */
+#gift-card-amount .tooltip-label small {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #b3b3b3;
+  font-size: .875em;
+}
+
+/* line 556, styles.gift-card.scss */
+#gift-card-instructions {
+  font-size: .875em;
+  text-align: center;
+  color: #999;
+  margin: 0 .75em 1.5em;
+}
+
+/* Actions */
+/* line 563, styles.gift-card.scss */
+#gift-card-actions {
+  border-top: 1px solid #f2f2f2;
+  padding: 1.25em .75em;
+  text-align: center;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 572, styles.gift-card.scss */
+.action-link {
+  font-size: .875em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #bfbfbf;
+  margin-top: 1.75em;
+}
+/* line 575, styles.gift-card.scss */
+.action-link:hover {
+  color: #999999;
+}
+
+/* line 580, styles.gift-card.scss */
+.action-link.left {
+  position: absolute;
+  left: 1.25em;
+  top: 1.25em;
+}
+
+/* line 584, styles.gift-card.scss */
+.action-link.right {
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+}
+
+/* line 589, styles.gift-card.scss */
+.action-link.left .ico-16,
+.action-link.right .ico-16 {
+  margin-right: .5em;
+}
+
+/* line 593, styles.gift-card.scss */
+.action-link .ico-16 {
+  zoom: 1;
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 598, styles.gift-card.scss */
+.action-link:hover .ico-16 {
+  zoom: 1;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+/* line 600, styles.gift-card.scss */
+.ico-16 {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  width: 17px;
+  height: 17px;
+  vertical-align: bottom;
+  margin-bottom: -1px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* line 608, styles.gift-card.scss */
+.ico-16.print {
+  background-image: url("icon-print.gift-card.png");
+}
+/* line 116, styles.gift-card.scss */
+.svg .ico-16.print {
+  background-image: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/icon-print.gift-card.svg?7902367800288418226);
+}
+
+/* line 613, styles.gift-card.scss */
+.ico-16.email {
+  background-image: url("icon-email.gift-card.png");
+}
+/* line 116, styles.gift-card.scss */
+.svg .ico-16.email {
+  background-image: url(//cdn.shopify.com/s/files/1/0822/4239/t/2/assets/icon-email.gift-card.svg?7902367800288418226);
+}
+
+/* - Footer ---------------------------------------------------------------------------- */
+/* line 620, styles.gift-card.scss */
+footer[role='contentinfo'] {
+  text-align: center;
+  padding: 3em 0;
+  -webkit-animation: fadein 0.5s ease-in-out both 0.4s;
+  -moz-animation: fadein 0.5s ease-in-out both 0.4s;
+  animation: fadein 0.5s ease-in-out both 0.4s;
+}
+
+/* line 626, styles.gift-card.scss */
+#footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+/* line 633, styles.gift-card.scss */
+#footer-links li {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+/* line 635, styles.gift-card.scss */
+#footer-links li + li {
+  margin-left: 1em;
+}
+
+/* line 637, styles.gift-card.scss */
+#footer-links li a {
+  color: #bfbfbf;
+}
+/* line 639, styles.gift-card.scss */
+#footer-links li a:hover {
+  color: #999999;
+}
+
+/* line 642, styles.gift-card.scss */
+footer[role='contentinfo'] .gift-card-icon {
+  width: 45px;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+}
+
+/*
+========================================================================================
+
+MEDIA QUERIES
+
+---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 580px) {
+  /* line 657, styles.gift-card.scss */
+  body {
+    font-size: 12px;
+  }
+
+  /* Typography */
+  /* line 663, styles.gift-card.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* Gift card */
+  /* line 669, styles.gift-card.scss */
+  #gift-card-outer-container {
+    padding: .5em;
+  }
+
+  /* line 673, styles.gift-card.scss */
+  .tooltip-container {
+    top: -65%;
+  }
+
+  /* line 677, styles.gift-card.scss */
+  #gift-card-actions .btn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.125em;
+  }
+
+  /* line 683, styles.gift-card.scss */
+  .action-link {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    font-size: 1.125em;
+    display: none;
+  }
+
+  /* line 689, styles.gift-card.scss */
+  .action-link + .action-link {
+    margin-left: 1.5em;
+  }
+
+  /* line 693, styles.gift-card.scss */
+  #footer-links li {
+    font-size: 1.125em;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* Typography */
+  /* line 703, styles.gift-card.scss */
+  h2 {
+    font-size: 1.25em;
+  }
+
+  /* Gift card */
+  /* line 709, styles.gift-card.scss */
+  #gift-card {
+    font-size: 10px;
+  }
+
+  /* line 713, styles.gift-card.scss */
+  #gift-card-holder .corner {
+    display: none;
+  }
+
+  /* line 717, styles.gift-card.scss */
+  #gift-card-holder .corner.bottom-right {
+    background-position: bottom right !important;
+  }
+
+  /* line 721, styles.gift-card.scss */
+  #gift-card-amount strong {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  /* Tooltip */
+  /* line 727, styles.gift-card.scss */
+  .tooltip-container {
+    top: -75%;
+  }
+}
+/* Shrink the logo when vertical space is tight */
+@media screen and (max-height: 800px) {
+  /* line 737, styles.gift-card.scss */
+  .logo {
+    max-height: 100px;
+  }
+}
+@media screen and (max-height: 750px) {
+  /* line 745, styles.gift-card.scss */
+  .logo {
+    max-height: 80px;
+  }
+
+  /* line 749, styles.gift-card.scss */
+  #header {
+    padding: 2em 0;
+  }
+}
+/*
+========================================================================================
+
+PRINT STYLES
+
+---------------------------------------------------------------------------------------- */
+@media print {
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 766, styles.gift-card.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 767, styles.gift-card.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 770, styles.gift-card.scss */
+  body {
+    background-color: #fff;
+  }
+
+  /* line 773, styles.gift-card.scss */
+  #gift-card-actions, #gift-card-holder .corner, .tooltip-container, #gift-card:before {
+    display: none;
+  }
+
+  /* line 776, styles.gift-card.scss */
+  #gift-card-code-inner strong {
+    color: #555;
+  }
+
+  /* line 777, styles.gift-card.scss */
+  #gift-card-amount .tooltip {
+    color: #fff !important;
+  }
+
+  /* line 778, styles.gift-card.scss */
+  .shop-url {
+    color: #7c8f97;
+    display: block;
+  }
+
+  /* line 779, styles.gift-card.scss */
+  .logo {
+    color: #58686F;
+  }
+
+  /* line 782, styles.gift-card.scss */
+  #gift-card-outer-container, #gift-card-inner-container, #gift-card-code-inner, #gift-card:before {
+    box-shadow: none;
+  }
+}

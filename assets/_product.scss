@@ -1,0 +1,311 @@
+.template-product {
+	.main-content {
+		padding: 0;
+	}
+	article {
+		padding-bottom: 40px;
+		.add-to-cart {
+			.button {
+				font-family: $nexa-heavy;
+				background: $pink;
+				width: 100%;
+				display: block;
+				clear: both;
+			  height: 60px;
+			  letter-spacing: 2px;
+			  font-size: 18px;
+			  line-height: 25px;
+			  font-weight: normal;
+			  &:hover {
+			  	background: $pinkhover;
+			  }
+			}
+		}
+		h1 {
+			color: $brown!important;
+			font-size: 35px;
+			line-height: 35px;
+			margin-bottom: 5px;
+		}
+		.prices {
+			margin-bottom: 10px;
+			.actual-price {
+				font-family: $nexaslab-light;
+				color: $brown;
+				font-size: 25px;
+				line-height: 25px;
+				font-weight: normal;
+			}
+			.compare-price {
+				font-family: $nexaslab-light;
+				font-size: 25px;
+				line-height: 25px;
+				font-weight: normal;
+			}
+		}
+		.description {
+			font-family: $nexa-light;
+			color: $brown;
+			p {
+				font-size: 14px;
+				line-height: 22px;
+			}
+			.extra-info {
+				p {
+					font-family: $nexa-bold;
+					font-weight: bold;
+					margin-bottom: 3px;
+				}
+				li {
+					font-size: 14px;
+					width: 50%;
+					float: left;
+					margin-bottom: 3px;
+				}	
+			}
+		}
+		.quantity {
+			label {
+				font-family: $nexa-bold;
+				display: inline-block;
+				margin-right: 6px;
+			}
+			input {
+				background: $tan;
+				display: inline-block;
+				height: 40px;
+				width: 50px;
+			}
+		}
+	}
+	.cart-form {
+		max-width: 300px;
+		.variants {
+			margin-top: 80px;
+			max-width: none;
+			label {
+				font-family: $nexa-bold;
+				display: inline-block;
+				margin-right: 12px;
+				line-height: 36px;
+				&[for="quantity"] {
+					margin-right: 3px;
+				}
+			}
+		}
+		&.custom {
+			.hidden-field {
+				display: none;
+			}
+			.custom.dropdown {
+				background: $tan;
+				display: inline-block;
+				width: 73%;
+				height: 40px;
+				padding: 5px;
+				ul {
+					li {
+						padding: 5px 10px;
+					}
+				}
+				.selector {
+					height: 40px;
+				}
+			}
+		}
+	}
+	.ingredients {
+		padding: 40px 0;
+		.container {
+			overflow: hidden;
+		}
+		.row {
+			max-width: 1600px;
+			margin: 10px auto;
+			padding: 0;			
+			.columns {
+				padding: 0;
+				&.left-text {
+					padding-left: 2%;
+					padding-right: 2%;
+				}
+				&.right-text {
+					padding-left: 2%;
+					padding-right: 2%;
+				}
+				img {
+					width: 100%;
+					max-width: 250px;
+					position: relative;
+				}
+				&.img-right img {
+					right: 0;
+					float: right;
+				}
+				&.img-left img {
+					left: 0;
+					float: left;
+				}
+			}
+			&.coconut {
+			}
+			&.cardamom {
+				.img-right {
+					margin-top: -30px;
+				}
+				img {
+					max-width: 150px;
+				}
+			}
+			&.cinnamon {
+				.img-left {
+					margin-top: -100px;
+				}
+				img {
+					max-width: 150px;
+				}
+			}
+			&.cloves {
+				.img-right {
+					margin-top: -18px;
+				}
+				img {
+					max-width: 150px;
+				}
+			}
+			&.nutmeg {
+				.img-left {
+					margin-top: -82px;
+				}
+				img {
+					max-width: 150px;
+				}
+			}
+			&.honey {
+				.img-right {
+					margin-top: -14px;
+				}
+				img {
+				}
+			}
+		}
+		h2 {			
+			font-size: 25px;
+			line-height: 25px;
+			font-weight: normal;
+			text-transform: none;
+			margin-bottom: 10px;
+		}
+		p {
+			font-family: $nexa-light;
+			font-size: 14px;
+			line-height: 25px;
+			margin-bottom: 10px;
+			&.origin {
+				font-family: $nexa-bold;
+				span {
+					font-family: $nexaslab-book-italic;
+				}
+			}
+		}
+		.intro {
+			text-align: center;
+			margin-bottom: 0;
+			h1 {
+				font-family: $nexaslab-book;
+				text-transform: none;
+				font-size: 47px;
+				line-height: 47px;
+				font-weight: normal;
+			}
+			p {
+				font-family: $nexaslab-book;
+				font-size: 14px;
+				line-height: 24px;
+			}			
+		}
+	}
+	.benefits {
+		background: $tan;
+		padding: 20px 0;
+		.intro {
+			text-align: center;
+			h1 {
+				font-family: $nexaslab-book;
+				text-transform: none;
+				font-size: 45px;
+				line-height: 47px;
+				font-weight: normal;
+				margin-bottom: 30px;
+			}
+			p {
+				font-size: 14px;
+				line-height: 24px;
+			}		
+		}
+		.row {
+			margin: 20px 0;
+			.columns {
+				.check {
+					float: left;
+					width: 6%;
+					.icomoon {
+						color: $pink;
+						font-size: 20px;
+					}
+				}
+				.copy {
+					float: left;
+					width: 94%;
+					h3 {
+						text-transform: none;
+						font-size: 20px;
+						line-height: 20px;
+						margin-bottom: 3px;
+					}
+					p {
+						font-family: $nexa-light;
+						font-size: 14px;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+	}
+	.how-to-eat {
+		padding: 0 0 50px;
+		.intro {
+			margin-top: 20px;
+		}
+		.container {
+			text-align: center;
+		}
+		h1 {
+			font-family: $nexaslab-book;
+			text-transform: none;
+			font-size: 47px;
+			line-height: 47px;
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 24px;
+		}	
+		.row {
+			margin: 20px 0;
+		}
+		.tip {
+			margin-top: 40px;
+			p {
+				color: $pink;
+			}
+		}
+		.full-img {
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
