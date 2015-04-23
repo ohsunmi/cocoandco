@@ -26,6 +26,16 @@
 				}
 			}
 		}
+		.column-3 {
+			.contact-form {
+				input[type="email"], .mailchimp-form input[type="email"] {
+					font-size: 14px;
+				}
+				input[type="submit"] {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 	.template-index {
 		.slider {

@@ -129,10 +129,12 @@
 		.contact-form {
 			input[type="email"], .mailchimp-form input[type="email"] {
 				font-family: $nexa-book!important;
+				font-size: 12px;
 				float: left;
 			}
 			input[type="submit"] {
 				float: left;
+				font-size: 12px;
 			}
 		}
 	}
