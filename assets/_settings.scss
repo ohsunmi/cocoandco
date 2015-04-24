@@ -72,39 +72,18 @@ p {
 	color: $brown;
 }
 
-input[type="email"] {
-	background: $lightbrown;
-  height: 50px;
-  padding: 20px;
-  border: none;
-  line-height: 16px;
-  font-size: 14px;
-  &::-webkit-input-placeholder {
-	  color: $brown;
-	}
-
-	&:-moz-placeholder { /* Firefox 18- */
-	  color: $brown;  
-	}
-
-	&::-moz-placeholder {  /* Firefox 19+ */
-	  color: $brown;  
-	}
-
-	&:-ms-input-placeholder {  
-	  color: $brown;  
-	}
-}
-
 .btn {
+	font-family: $nexa-book;
 	background: $pink;
 	color: $white;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 	padding: 20px;
   height: 50px;
   line-height: 2px;
   font-size: 14px;
   border-radius: 4px;
+  border: none;
   &:hover {
   	background: $pinkhover;
   }

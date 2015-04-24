@@ -1,0 +1,39 @@
+.page-contact {
+	.main-content {
+		padding: 0;
+		.banner {
+			.copy {
+				.inner {
+					h1 {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.container {
+			margin-top: 50px;
+			h2 {
+				margin-bottom: 40px;
+			}
+			.side {
+				p {
+					font-size: 14px;
+					margin-bottom: 20px;
+					strong {
+						font-family: $nexa-bold;
+						font-weight: bold;
+					}
+					&:nth-of-type(3) {
+						margin-bottom: 0;
+					}
+				}
+			}				
+		}
+		input[type="submit"] {
+			-webkit-appearance: none;
+		}
+	}
+	.main-footer {
+		
+	}
+}

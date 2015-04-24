@@ -94,6 +94,15 @@
 }
 
 .homepage-quote {
+	.cycle-slideshow {
+		max-width: 650px;
+		margin: 0 auto;
+		
+		position: relative;
+			> div {
+			width: 100%;
+		}
+	}
 	h2 {
 		font-family: $nexaslab-book;
 		color: $brown;
@@ -101,9 +110,10 @@
 		font-weight: normal;
   	line-height: 33px;
 		margin: 0 auto;
-		padding: 50px 20px;
+		padding: 40px 20px;
 		text-align: center;
 		text-transform: none;
+		text-align: center;
 		span {
 			font-family: $nexaslab-book-italic;
 			font-size: 17px;
@@ -136,6 +146,29 @@
 				float: left;
 				font-size: 12px;
 			}
+		}
+	}
+	input[type="email"] {
+		background: $lightbrown;
+	  height: 50px;
+	  padding: 20px;
+	  border: none;
+	  line-height: 16px;
+	  font-size: 14px;
+	  &::-webkit-input-placeholder {
+		  color: $brown;
+		}
+
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: $brown;  
+		}
+
+		&::-moz-placeholder {  /* Firefox 19+ */
+		  color: $brown;  
+		}
+
+		&:-ms-input-placeholder {  
+		  color: $brown;  
 		}
 	}
 }

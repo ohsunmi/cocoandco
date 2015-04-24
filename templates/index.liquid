@@ -140,7 +140,38 @@
     <div class="modal-mask"></div>
 
     <div class="homepage-quote">
-      <h2>{{ pages['homepage-quote'].content }}<br><span>{{ pages['homepage-quote'].metafields.c_f.homepage_quote_author }}</span></h2>
+      <div class="cycle-slideshow"
+        data-cycle-fx="fade"
+        data-cycle-pause-on-hover="false"
+        data-cycle-speed="1500"
+        data-cycle-slides="> div"
+        >
+      {% if pages['homepage-quote-1'].content != '' %}
+        <div>
+          <h2>{{ pages['homepage-quote-1'].content }}<br><span>{{ pages['homepage-quote-1'].metafields.c_f.homepage_quote_author }}</span></h2>
+        </div>
+      {% endif %}
+      {% if pages['homepage-quote-2'].content != '' %}
+        <div>
+          <h2>{{ pages['homepage-quote-2'].content }}<br><span>{{ pages['homepage-quote-2'].metafields.c_f.homepage_quote_author }}</span></h2>
+        </div>
+      {% endif %}
+      {% if pages['homepage-quote-3'].content != '' %}
+        <div>
+          <h2>{{ pages['homepage-quote-3'].content }}<br><span>{{ pages['homepage-quote-3'].metafields.c_f.homepage_quote_author }}</span></h2>
+        </div>
+      {% endif %}
+      {% if pages['homepage-quote-4'].content != '' %}
+        <div>
+          <h2>{{ pages['homepage-quote-4'].content }}<br><span>{{ pages['homepage-quote-4'].metafields.c_f.homepage_quote_author }}</span></h2>
+        </div>
+      {% endif %}
+      {% if pages['homepage-quote-5'].content != '' %}
+        <div>
+          <h2>{{ pages['homepage-quote-5'].content }}<br><span>{{ pages['homepage-quote-5'].metafields.c_f.homepage_quote_author }}</span></h2>
+        </div>
+      {% endif %}
+      </div>
     </div>
 
 
@@ -413,3 +444,14 @@
   {% endif %}
 {% endfor %}
 
+<script>
+  $(function(){
+    var maxHeight = 0;
+    $('.homepage-quote h2').each(function() {
+      if ($(this).outerHeight() > maxHeight) {
+        maxHeight = $(this).outerHeight();
+      }
+    });
+    // $('.homepage-quote > div').outerHeight(maxHeight);
+  });
+</script>
