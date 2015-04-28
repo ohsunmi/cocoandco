@@ -20,7 +20,7 @@
   <p>
     <label for="address_zip">{{ 'cart.shipping_calculator.zip' | t }}</label>
     <input type="text" id="address_zip" name="address[zip]"{% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %} />
-    <input type="button" class="button get-rates" value="{{ 'cart.shipping_calculator.calculate' | t }}" />
+    <input type="button" class="btn calculate-btn get-rates" value="{{ 'cart.shipping_calculator.calculate' | t }}" />
   </p> 
 
   

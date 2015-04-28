@@ -1,8 +1,23 @@
 .page-tiki-carts {
+	height: 100%!important;
+	header {
+		-webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  padding: 0;
+	  height: initial;
+	}
+	h1 {
+		color: $white;
+	}
+	p {
+		margin-bottom: 22px;
+	}
 	.main-content {
 		padding: 0;
 	}
 	.main-footer {
+		position: relative;
 		margin-top: 0;
 	}
 	.banner {
@@ -10,5 +25,26 @@
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+	}
+	#dondeLocator {
+		height: 500px;
+		form.ng-pristine.ng-valid {
+			input[type="search"] {
+				width: 78%;
+				margin-left: 2%;
+				margin-bottom: 0;
+				height: 100%;
+				padding-left: 10px!important;
+			}
+		}
+		.locationSearch {
+			max-width: 300px;
+		  margin-right: 5px;
+		  display: inline;
+		  margin-bottom: 0;
+		}
+		h2.distance-web {
+			color: $pink;
+		}
 	}
 }

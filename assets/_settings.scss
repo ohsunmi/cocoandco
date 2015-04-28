@@ -69,13 +69,14 @@ h3.title {
 }
 
 p {
+	font-family: $nexa-book;
 	color: $brown;
 }
 
 .btn {
 	font-family: $nexa-book;
 	background: $pink;
-	color: $white;
+	color: $white !important;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 20px;

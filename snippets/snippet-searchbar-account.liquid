@@ -4,13 +4,48 @@
   {% endif %}
 
 
+<div class="cart">
   <a class="cart-link" href="/cart"><span aria-hidden="true" class="cart icomoon"></span>{{ 'layout.header.cart' | t }}</a>
+  <div class="recently-added">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td colspan="3">{{ 'products.recently_added_popup.title' | t }}</td>
+          </tr>
+        </thead>
+        
+        <tbody>
+          
+
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td class="items-count"><a href="/cart"><span class="number">{{ cart.item_count }}</span> {{ 'products.recently_added_popup.items' | t }}</a></td>
+            <td colspan="2" class="text-right all-caps"><strong>{{ 'products.recently_added_popup.total' | t }} <span class="total-price" style="margin-left:5px;">{{ cart.total_price | money }}</span></strong></td>
+          </tr>
+        </tfoot>
+        
+      </table>
+
+      <div class="row"> 
+        <div class="checkout">
+          <a class="btn" href="/cart">{{ 'products.recently_added_popup.checkout_button' | t }}</a>
+        </div><!-- #cart-meta -->
+      </div>
+
+      <div class="error">
+        <p>{{ 'products.recently_added_popup.unavailable' | t }}</p>
+      </div>
+
+    </div>
+</div>
 
 
   {% if settings.header-account-show and shop.customer_accounts_enabled %}
     {% comment %}<a class="account-open" href="#">{{ 'layout.header.account_toggle_link' | t }}<span aria
     -hidden="true" class="glyph account"></span></a>{% endcomment %}
-    <a class="account-icon" href="/account"><span aria-hidden="true" class=" account icomoon"></span>{{ 'layout.header.account_toggle_link' | t }}</a>
+    <a class="account-icon" href="/account"><span aria-hidden="true" class=" account icomoon"></span>Login</a>
   {% endif %}
 
   

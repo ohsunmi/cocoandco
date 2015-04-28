@@ -1,0 +1,35 @@
+.template-cart {
+	.main-content {
+		text-align: center;
+		.empty-cart.row {
+			max-width: none;
+		}
+		.totals {
+			input[type="submit"] {
+				margin-bottom: 20px;
+				&.update-btn {
+					background: #444444;
+					&:hover {
+						background: $black;
+					}
+				}
+			}
+		}
+		.shipping-calculator {
+			margin: 0 auto;
+		}
+		.calculate-btn {
+			background: #444444;
+			&:hover {
+				background: $black;
+			}
+		}
+		.continue-shopping {
+			a {
+				font-family: $nexa-bold;
+				color: $pink;
+				font-size: 17px;
+			}
+		}
+	}
+}

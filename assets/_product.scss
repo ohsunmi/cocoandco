@@ -3,7 +3,7 @@
 		padding: 0;
 	}
 	article {
-		padding-bottom: 40px;
+		padding-bottom: 0;
 		.add-to-cart {
 			.button {
 				font-family: $nexa-heavy;
@@ -135,7 +135,7 @@
 				}
 				img {
 					width: 100%;
-					max-width: 250px;
+					max-width: none;
 					position: relative;
 				}
 				&.img-right img {
@@ -146,46 +146,38 @@
 					left: 0;
 					float: left;
 				}
+				&.mobile-hide {
+					display: none;
+				}
 			}
 			&.coconut {
 			}
 			&.cardamom {
-				.img-right {
-					margin-top: -30px;
+				.mobile-show {
+					margin-top: -29px;
 				}
-				img {
-					max-width: 150px;
+				.left-text {
+					margin-top: -127px;
 				}
 			}
 			&.cinnamon {
 				.img-left {
-					margin-top: -100px;
-				}
-				img {
-					max-width: 150px;
+					margin-top: -28px;
 				}
 			}
 			&.cloves {
-				.img-right {
-					margin-top: -18px;
-				}
-				img {
-					max-width: 150px;
+				.mobile-show {
+					margin-top: -28px;
 				}
 			}
 			&.nutmeg {
 				.img-left {
-					margin-top: -82px;
-				}
-				img {
-					max-width: 150px;
+					margin-top: -28px;
 				}
 			}
 			&.honey {
-				.img-right {
-					margin-top: -14px;
-				}
-				img {
+				.mobile-show {
+					margin-top: -25px;
 				}
 			}
 		}
@@ -273,7 +265,7 @@
 		}
 	}
 	.how-to-eat {
-		padding: 0 0 50px;
+		padding: 0;
 		.intro {
 			margin-top: 20px;
 		}

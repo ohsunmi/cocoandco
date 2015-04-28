@@ -41,7 +41,7 @@
 		.meuu {
 			.account.glyph {
 				margin-left: 4px;
-			}			
+			}
 		}	
 		a, a:link {
 			font-family: $nexa-bold;
@@ -54,6 +54,16 @@
 				color: $hovercolor;
 			}
 		}
+		.cart {
+			display: inline;
+			a.btn {
+				width: 100%;
+				display: block;
+				color: $white;
+				line-height: 12px;
+				text-align: center;
+			}
+		}	
 	}
 	.mobile-tools {
 		a {
@@ -273,6 +283,19 @@
 					&:hover {
 						background: $pinkhover;
 					}
+				}
+			}
+		}
+	}
+}
+
+.line {
+	.columns {
+		p {
+			a {
+				color:$pink;
+				&:hover {
+					color: $pinkhover;
 				}
 			}
 		}

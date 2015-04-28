@@ -45,10 +45,10 @@
           <label>{{ 'contact_page.email' | t }}:</label>
           <input required="required" type="email" id="contactFormEmail" name="contact[email]" class="styled-input{% if form.errors contains 'email' %} error{% endif %}" value="{{ contact.fields.email }}" />
         </p>
-        <p>
+        {% comment %}<p>
           <label>{{ 'contact_page.phone' | t }}:</label>
           <input type="tel" id="contactFormTelephone" name="contact[phone]" class="styled-input{% if form.errors contains 'phone' %} error{% endif %}" value="{{ contact.fields.phone }}" />
-        </p> 
+        </p> {% endcomment %}
         <p>
           <label>{{ 'contact_page.message' | t }}:</label>
           <textarea required="required" rows="10" cols="60"  id="contactFormMessage" name="contact[body]" class="styled-input{% if form.errors contains 'body' %} error{% endif %}">{{  contact.fields.body }}</textarea>

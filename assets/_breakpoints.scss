@@ -76,6 +76,9 @@
 		.main-footer {
 			margin-top: 50px;
 		}
+		#dondeLocator {
+			height: auto;
+		}
 	}
 	.banner {
 		height: 600px;
@@ -90,21 +93,20 @@
 		}
 	}
 	.line {
-		margin: 50px 0;
+		margin: 40px 0;
 		h1 {
 			font-size: 48px;
 			line-height: 57px;
 		}
-		h2 {
+		h2:not(.title-web):not(.distance-web):not(.mobile-title-web) {
 			font-size: 51px;
 			line-height: 51px;
-			margin-top: 80px;
 		}
 		.quote-line {
 			padding: 0 50px;
 			margin-top: 80px;
 		}
-		p {
+		p:not(.ng-binding) {
 			font-size: 22px;
 			line-height: 32px;
 			&.quote {
@@ -113,6 +115,11 @@
 		}
 		.contact {
 			margin: 20px 40px 0 0;
+		}
+		&.private-events, &.locator {
+			h2 {
+				margin-top: 0;
+			}
 		}
 	}
 	.intro {
@@ -124,7 +131,6 @@
 	.template-product {
 		article {
 			padding-top: 50px;
-			padding-bottom: 100px;
 			h1 {
 				font-size: 57px;
 				line-height: 57px;
@@ -203,11 +209,10 @@
 		.how-to-eat {
 			.intro {
 				margin-top: 40px;
-				margin-bottom: 80px;
 				h1 {
 					font-size: 57px;
 					line-height: 57px;
-					margin-bottom: 60px;
+					margin-bottom: 30px;
 				}
 				p {
 					font-size: 22px;
@@ -233,6 +238,9 @@
 		.ingredients {
 			.intro {
 				margin-bottom: 80px;
+				h1 {
+					margin-bottom: 30px;
+				}
 			}
 			.row {
 				margin: 10px auto;
@@ -254,41 +262,60 @@
 					&.img-left img {
 						float: none;
 					}
+					&.mobile-show {
+						display: none;
+					}
+					&.mobile-hide {
+						display: inline-block;
+					}
 				}
 				&.coconut {
 					img {
 						width: 138%;
-						max-width: none;
 						top: -62px;
 					}
 				}
 				&.cardamom {
 					img {
 						top: -13px;
-						max-width: none;
+					}
+					.left-text {
+						margin-top: 0;
+					}
+					.img-right {
+						margin-top: -30px;
 					}
 				}
 				&.cinnamon {
 					img {
 						top: 80px;	
-						max-width: none;
+					}
+					.img-left {
+						margin-top: -100px;
 					}
 				}
 				&.cloves {
 					img {
 						top: 0px;	
-						max-width: none;
+					}
+					.img-right {
+						margin-top: -18px;
 					}
 				}
 				&.nutmeg {
 					img {
 						top: 78px;	
-						max-width: none;
+					}
+					.img-left {
+						margin-top: -82px;
 					}
 				}
 				&.honey {
 					img {
 						top: 5px;	
+					}
+					.img-right {
+						margin-top: -14px;
 					}
 				}
 			}

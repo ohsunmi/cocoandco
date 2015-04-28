@@ -201,6 +201,23 @@
   </div>
 </article>
 
+<div class="how-to-eat">
+  <div class="container">
+    <div class="columns large-12 intro">
+      <h1>{{ pages['product-ingredients-section-3'].metafields.c_f.ingredients_section_title }}</h1>
+      <p>{{ pages['product-ingredients-section-3'].content | split: '</p>' | first }}</p>
+      <div class="full-img">
+        <div class="columns large-12">
+         {{ 'how_to_eat_img.png' | asset_url | img_tag }}
+        </div>
+      </div>
+      {% comment %}<div class="tip">{{ pages['product-ingredients-section-3'].content | split: '</p>' | last }}</div>{% endcomment %}
+    </div>
+    <div class="row">
+    </div>
+  </div>
+</div>
+
 <div class="ingredients">
   <div class="">
     <div class="container">
@@ -221,12 +238,15 @@
       </div>
     </div>
     <div class="row cardamom">
+      <div class="columns large-5 mobile-show">
+        {{ 'illustration_cardamom.png' | asset_url | img_tag }}
+      </div>
       <div class="columns large-7 left-text">
         <h2>{{ pages['product-ingredients-cardamom'].metafields.c_f.ingredients_title }}</h2>
         <p class="origin">Origin: <span>{{ pages['product-ingredients-cardamom'].metafields.c_f.ingredients_origin }}</span></p>
         <p>{{ pages['product-ingredients-cardamom'].content }}</p>
       </div>
-      <div class="columns large-5 img-right">
+      <div class="columns large-5 img-right mobile-hide">
         {{ 'illustration_cardamom.png' | asset_url | img_tag }}
       </div>
     </div>
@@ -241,12 +261,15 @@
       </div>
     </div>
     <div class="row cloves">
+      <div class="columns large-5 mobile-show">
+        {{ 'illustration_cloves.png' | asset_url | img_tag }}
+      </div>
       <div class="columns large-7 left-text">
         <h2>{{ pages['product-ingredients-cloves'].metafields.c_f.ingredients_title }}</h2>
         <p class="origin">Origin: <span>{{ pages['product-ingredients-cloves'].metafields.c_f.ingredients_origin }}</span></p>
         <p>{{ pages['product-ingredients-cloves'].content }}</p>
       </div>
-      <div class="columns large-5 img-right">
+      <div class="columns large-5 img-right mobile-hide">
         {{ 'illustration_cloves.png' | asset_url | img_tag }}
       </div>
     </div>
@@ -261,12 +284,15 @@
       </div>
     </div>
     <div class="row honey">
+      <div class="columns large-5 mobile-show">
+        {{ 'illustration_honey.png' | asset_url | img_tag }}
+      </div>
       <div class="columns large-7 left-text">
         <h2>{{ pages['product-ingredients-honey'].metafields.c_f.ingredients_title }}</h2>
         <p class="origin">Origin: <span>{{ pages['product-ingredients-honey'].metafields.c_f.ingredients_origin }}</span></p>
         <p>{{ pages['product-ingredients-honey'].content }}</p>
       </div>
-      <div class="columns large-5 img-right">
+      <div class="columns large-5 img-right mobile-hide">
         {{ 'illustration_honey.png' | asset_url | img_tag }}
       </div>
     </div>
@@ -325,23 +351,6 @@
           <p>{{ pages['product-benefits-weight-loss'].content }}</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="how-to-eat">
-  <div class="container">
-    <div class="columns large-12 intro">
-      <h1>{{ pages['product-ingredients-section-3'].metafields.c_f.ingredients_section_title }}</h1>
-      <p>{{ pages['product-ingredients-section-3'].content | split: '</p>' | first }}</p>
-      <div class="full-img">
-        <div class="columns large-12">
-         {{ 'how_to_eat_img.png' | asset_url | img_tag }}
-        </div>
-      </div>
-      <div class="tip">{{ pages['product-ingredients-section-3'].content | split: '</p>' | last }}</div>
-    </div>
-    <div class="row">
     </div>
   </div>
 </div>

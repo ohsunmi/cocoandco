@@ -1,3 +1,10 @@
+<head>
+	<link rel="stylesheet" href="https://s3.amazonaws.com/donde-styles/donde-style-v2.min.css">
+  <link rel="stylesheet" href="http://api.donde.io/css/553e3d1b92fe7e748a000001">
+  {{ 'style.css' | asset_url | stylesheet_tag }}
+  {{ 'styles.css' | asset_url | stylesheet_tag }}
+</head>
+
 <div class="banner" style="background:url({{ 'tikicarts_bg.jpg' | asset_url }}); background-size:cover; background-position:center;">
 	<div class="copy">
 		<div class="inner">
@@ -9,18 +16,25 @@
 
 <div class="container">
 	<div class="line">
-		<div class="columns large-5 margin-bottom">
+		{% comment %}<div class="columns large-5 margin-bottom">
 			{{ 'tikicarts_img_1.jpg' | asset_url | img_tag }}
-		</div>
-		<div class="columns large-7">
+		</div>{% endcomment %}
+		<div class="columns large-12">
 			<p>{{ pages['tiki-carts-copy'].content }}</p>
 		</div>
 	</div>
 
-	<div class="line">
+	<div class="line private-events">
 		<div class="columns large-12">
 			<h2>{{ pages['private-events'].metafields.c_f.section_title }}</h2>
 			<p>{{ pages['private-events'].content }}</p>
+		</div>
+	</div>
+
+	<div class="line locator">
+		<div class="columns large-12">
+			<h2>{{ pages['locator'].metafields.c_f.section_title }}</h2>
+			<div id="dondeLocator"></div>
 		</div>
 	</div>
 </div>
