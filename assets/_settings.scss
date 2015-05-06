@@ -31,8 +31,20 @@ $nexa-light: 'NexaLight', sans-serif;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'ico-moon';
+	src:url('ico-moon.eot?y52013');
+	src:url('ico-moon.eot?#iefixy52013') format('embedded-opentype'),
+		url('ico-moon.woff?y52013') format('woff'),
+		url('ico-moon.ttf?y52013') format('truetype'),
+		url('ico-moon.svg?y52013#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .icomoon {
 	font-family: 'icomoon';
+	font-family: 'ico-moon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -96,10 +108,10 @@ p {
 }
 
 .icomoon {
-	&.account:before {
+	&.account-ico:before {
 		content: "\e600";
 	}
-	&.cart:before {
+	&.cart-ico:before {
 		content: "\e601";
 	}
 	&.check:before {

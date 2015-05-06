@@ -93,5 +93,14 @@
         {% endif %}
 
     {% endfor %}
+   {% if settings.header-account-show and shop.customer_accounts_enabled %}
+      <li class="nav-item">
+        {% if customer%}
+          <a href="/account/logout" class="nav-item-link">Logout</a>
+        {% else %}
+          <a href="/account" class="nav-item-link">Login</a>
+        {% endif %}
+      </li>
+  {% endif %}
   </ul>
 </nav>

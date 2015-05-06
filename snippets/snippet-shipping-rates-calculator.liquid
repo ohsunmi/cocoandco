@@ -12,7 +12,7 @@
 
 
     <p id="address_province_container" style="display:none;">
-      <label for="address_province">{{ 'cart.shipping_calculator.province' | t }}</label>
+      <label for="address_province">State</label>
       <select id="address_province" class="address_form" name="address[province]" data-default="{% if shop.customer_accounts_enabled and customer and customer.default_address.province != '' %}{{ customer.default_address.province }}{% endif %}"></select>
     </p>
   </div>

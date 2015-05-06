@@ -50,7 +50,7 @@
           <input type="tel" id="contactFormTelephone" name="contact[phone]" class="styled-input{% if form.errors contains 'phone' %} error{% endif %}" value="{{ contact.fields.phone }}" />
         </p> {% endcomment %}
         <p>
-          <label>{{ 'contact_page.message' | t }}:</label>
+          <label>What's up cocobabe?:</label>
           <textarea required="required" rows="10" cols="60"  id="contactFormMessage" name="contact[body]" class="styled-input{% if form.errors contains 'body' %} error{% endif %}">{{  contact.fields.body }}</textarea>
         </p>
         <p>

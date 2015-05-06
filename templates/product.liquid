@@ -81,6 +81,10 @@
               </li>
             {% endfor %}
           </ul>
+
+          <div style="display:none;">
+            {% include 'product-thumbs' %}
+          </div>
         {% endif %}
       </div>
     </div>
@@ -90,7 +94,7 @@
         <div class="variants {% unless product.variants.size > 1 %}hidden{% endunless %}">
           <select id="variant-listbox" name="id" class="medium">
             {% for variant in product.variants %}
-              <option {% if variant.inventory_quantity <= 0 and variant.available == false %}DISABLED {% endif %}{% if variant == product.selected_or_first_available_variant %}selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+              <option {% if variant.inventory_quantity <= 0 and variant.available == false %}DISABLED {% endif %}{% if variant == product.selected_or_first_available_variant %}selected="selected" {% endif %} value="{{ variant.id }}" data-sku="{{variant.sku}}">{{ variant.title }} - {{ variant.price | money }}</option>
             {% endfor %}
           </select>
         </div>

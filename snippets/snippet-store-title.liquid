@@ -1,7 +1,7 @@
 <h1 class="title clearfix" role="banner">
   {% if settings.header-logo-show %}
     <a href="/" role="banner" title="{{ shop.name }}">
-    <img src="{{ 'logo.png' | asset_url }}" data-retina="{{ 'logo-retina.png' | asset_url }}" alt="{{ shop.name }}"> 
+    <img src="{{ 'logo.png' | asset_url }}" data-retina="{{ 'logo-retina.png' | asset_url }}" alt="{{ shop.name }}" data-mobile="{{ 'logo-minus-bk.png' | asset_url }}"> 
     </a>
   {% else %}
     <a href="/">{{ shop.name }}</a>

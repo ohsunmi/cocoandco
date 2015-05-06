@@ -1,6 +1,6 @@
 <div class="cart" style="display:none;">
  	<div class="show-for-medium-up">
-	  <a class="cart-link" href="/cart">{{ 'layout.header.cart' | t }} <span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %}">(<span class="number">{{ cart.item_count }}</span>)</span><span aria-hidden="true" class="glyph cart"></span></a>
+	  <a class="cart-link" href="/cart"><span class="number">{{ cart.item_count }}&nbsp;</span>{{ 'layout.header.cart' | t }} <span class="number-wrapper {% if cart.item_count == 0 %}hide{% endif %}"></span><span aria-hidden="true" class="glyph cart"></span></a>
 
 		<div class="recently-added">
 		  <table width="100%">

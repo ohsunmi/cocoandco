@@ -1,9 +1,9 @@
 <div class="account-content">
 <div id="customer-login">
-  <div class="row">
+  <div class="">
     <div id="login" class="columns large-7">
       <h1 class="page-title">{{ 'customer.login.page_title' | t }}</h1>
-      {% include 'snippet-breadcrumbs' %}
+      {% comment %}{% include 'snippet-breadcrumbs' %}{% endcomment %}
 
       {% form 'customer_login' %}
       {{ form.errors | default_errors }}
@@ -18,7 +18,7 @@
       {% endif %}
 
       <div class="action_bottom">
-        <input class="button" type="submit" value="{{ 'customer.login.sign_in' | t }}" />
+        <input class="button btn" type="submit" value="{{ 'customer.login.sign_in' | t }}" />
         <span class="note"> <a style="margin-left: 15px;" href="{{ shop.url }}/account/register">{{ 'customer.login.new_account' | t }}</a></span>
       </div>
       {% endform %}

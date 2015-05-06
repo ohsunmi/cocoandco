@@ -13,6 +13,14 @@
 			}
 		}
 	}
+	.main-header {
+		.top.row {
+			display: block;
+		}
+		h1.title {
+			max-width: none;
+		}
+	}
 	.main-footer {
 		.column-2 {
 			.footer-nav {
@@ -152,6 +160,9 @@
 					line-height: 26px;
 				}
 				.extra-info {
+					ul {
+						padding-left: 20px;
+					}
 					li {
 						width: 40%;
 						font-size: 18px;

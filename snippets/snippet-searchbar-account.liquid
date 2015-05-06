@@ -5,7 +5,7 @@
 
 
 <div class="cart">
-  <a class="cart-link" href="/cart"><span aria-hidden="true" class="cart icomoon"></span>{{ 'layout.header.cart' | t }}</a>
+  <a class="cart-link" href="/cart"><span class="number">{{ cart.item_count }}&nbsp;</span><span aria-hidden="true" class="cart-ico icomoon"></span><span>{{ 'layout.header.cart' | t }}</span></a>
   <div class="recently-added">
       <table width="100%">
         <thead>
@@ -45,7 +45,13 @@
   {% if settings.header-account-show and shop.customer_accounts_enabled %}
     {% comment %}<a class="account-open" href="#">{{ 'layout.header.account_toggle_link' | t }}<span aria
     -hidden="true" class="glyph account"></span></a>{% endcomment %}
-    <a class="account-icon" href="/account"><span aria-hidden="true" class=" account icomoon"></span>Login</a>
+    <div class="account">
+      {% if customer%}
+          <a class="account-icon" href="/account/logout"><span aria-hidden="true" class="account-ico icomoon"></span><span>Logout</span></a>
+      {% else %}
+        <a class="account-icon" href="/account"><span aria-hidden="true" class="account-ico icomoon"></span><span>Login</span></a>
+      {% endif %}
+    </div>
   {% endif %}
 
   

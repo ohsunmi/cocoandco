@@ -104,9 +104,18 @@
   font-style: normal;
 }
 
-/* line 34, _settings.scss */
+@font-face {
+  font-family: 'ico-moon';
+  src: url("ico-moon.eot?y52013");
+  src: url("ico-moon.eot?#iefixy52013") format("embedded-opentype"), url("ico-moon.woff?y52013") format("woff"), url("ico-moon.ttf?y52013") format("truetype"), url("ico-moon.svg?y52013#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 45, _settings.scss */
 .icomoon {
   font-family: 'icomoon';
+  font-family: 'ico-moon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -117,45 +126,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 46, _settings.scss */
+/* line 58, _settings.scss */
 html, body {
   width: 100%;
   min-width: 320px;
   overflow-x: scroll;
 }
 @media (min-width: 320px) {
-  /* line 46, _settings.scss */
+  /* line 58, _settings.scss */
   html, body {
     overflow-x: hidden;
   }
 }
 
-/* line 55, _settings.scss */
+/* line 67, _settings.scss */
 body {
   font-family: "NexaBook", sans-serif;
   color: #452c0d;
 }
 
-/* line 60, _settings.scss */
+/* line 72, _settings.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "NexaHeavy", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-/* line 66, _settings.scss */
+/* line 78, _settings.scss */
 h3.title {
   color: #452c0d;
   font-size: 30px;
 }
 
-/* line 71, _settings.scss */
+/* line 83, _settings.scss */
 p {
   font-family: "NexaBook", sans-serif;
   color: #452c0d;
 }
 
-/* line 76, _settings.scss */
+/* line 88, _settings.scss */
 .btn {
   font-family: "NexaBook", sans-serif;
   background: #e22a7b;
@@ -169,44 +178,45 @@ p {
   border-radius: 4px;
   border: none;
 }
-/* line 88, _settings.scss */
+/* line 100, _settings.scss */
 .btn:hover {
   background: #920f54;
 }
 
-/* line 93, _settings.scss */
+/* line 105, _settings.scss */
 .container {
   max-width: 1080px;
   margin: 0 auto;
 }
 
-/* line 99, _settings.scss */
-.icomoon.account:before {
+/* line 111, _settings.scss */
+.icomoon.account-ico:before {
   content: "\e600";
 }
-/* line 102, _settings.scss */
-.icomoon.cart:before {
+/* line 114, _settings.scss */
+.icomoon.cart-ico:before {
   content: "\e601";
 }
-/* line 105, _settings.scss */
+/* line 117, _settings.scss */
 .icomoon.check:before {
   content: "\e602";
 }
 
 /* line 1, _homepage.scss */
-.account-icon, .mobile-tools .account {
-  display: none;
-}
-
-/* line 7, _homepage.scss */
 .main-header .bg {
   background: white;
 }
 
-/* line 12, _homepage.scss */
+/* line 6, _homepage.scss */
+.main-header h1.title {
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 11, _homepage.scss */
 .main-header .top.row {
   padding-top: 20px;
   padding-bottom: 5px;
+  display: none;
 }
 /* line 16, _homepage.scss */
 .main-header .bottom-row {
@@ -229,81 +239,155 @@ p {
 }
 /* line 33, _homepage.scss */
 .main-header .icomoon {
-  font-size: 15px;
+  font-size: 24px;
   color: #452c0d;
+  margin-right: 4px;
 }
-/* line 36, _homepage.scss */
-.main-header .icomoon:hover {
-  color: #83694e;
-}
-/* line 42, _homepage.scss */
+/* line 40, _homepage.scss */
 .main-header .search-account .meuu .account.glyph {
   margin-left: 4px;
 }
-/* line 46, _homepage.scss */
+/* line 44, _homepage.scss */
 .main-header .search-account a, .main-header .search-account a:link {
   font-family: "NexaBold", sans-serif;
   color: #452c0d;
   font-size: 11px;
   text-transform: uppercase;
+  margin-right: 8px;
 }
-/* line 53, _homepage.scss */
+/* line 52, _homepage.scss */
 .main-header .search-account a:hover {
   color: #83694e;
 }
-/* line 57, _homepage.scss */
+/* line 54, _homepage.scss */
+.main-header .search-account a:hover span {
+  color: #83694e;
+}
+/* line 59, _homepage.scss */
 .main-header .search-account .cart {
   display: inline;
 }
-/* line 59, _homepage.scss */
+/* line 61, _homepage.scss */
 .main-header .search-account .cart a.btn {
   width: 100%;
   display: block;
   color: white;
+  margin-right: 8px;
   line-height: 12px;
   text-align: center;
 }
-/* line 69, _homepage.scss */
+/* line 70, _homepage.scss */
+.main-header .search-account .cart a.cart-link span.number {
+  font-family: "NexaSlab-Book", sans-serif;
+  font-size: 11px;
+  color: white;
+  margin-right: 5px;
+}
+/* line 76, _homepage.scss */
+.main-header .search-account .cart a.cart-link span:before {
+  font-size: 48px;
+  float: left;
+  margin-top: -7px;
+  margin-right: -30px;
+}
+/* line 84, _homepage.scss */
+.main-header .search-account .account {
+  display: inline-block;
+}
+/* line 87, _homepage.scss */
+.main-header .search-account .account a.account-icon span:before {
+  font-size: 22px;
+  float: left;
+  margin-top: -6px;
+}
+/* line 95, _homepage.scss */
+.main-header .mobile-tools {
+  padding: 2px 0 4px;
+}
+/* line 97, _homepage.scss */
 .main-header .mobile-tools a {
   color: #452c0d;
+  position: absolute;
+  width: 30px;
+  top: 0;
+  left: 10px;
+  margin: 13px 0 0;
 }
-/* line 72, _homepage.scss */
-.main-header .mobile-tools a.cart img {
-  margin-top: -7px;
+/* line 104, _homepage.scss */
+.main-header .mobile-tools a.cart {
+  left: auto;
+  right: 41px;
+  margin-top: -2px;
 }
-/* line 79, _homepage.scss */
+/* line 109, _homepage.scss */
+.main-header .mobile-tools a.cart span.cart-ico:before {
+  font-size: 48px;
+}
+/* line 112, _homepage.scss */
+.main-header .mobile-tools a.cart span.number {
+  font-family: "NexaSlab-Book", sans-serif;
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-top: -29px;
+  margin-right: -19px;
+  position: relative;
+  z-index: 2;
+}
+/* line 125, _homepage.scss */
+.main-header .mobile-tools .logo-mobile {
+  display: block;
+  float: none;
+  left: 0;
+  width: 170px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 134, _homepage.scss */
+.main-header .mobile-tools .recently-added {
+  display: none;
+}
+/* line 140, _homepage.scss */
+.main-header .recently-added.mobile .checkout a {
+  width: 100%;
+  display: block;
+  line-height: 15px;
+  text-align: center;
+}
+/* line 149, _homepage.scss */
 .main-header .mobile-menu ul {
   text-align: center;
 }
-/* line 83, _homepage.scss */
+/* line 153, _homepage.scss */
 .main-header .mobile-menu .nav-item a {
   text-transform: uppercase;
 }
 
-/* line 91, _homepage.scss */
+/* line 161, _homepage.scss */
 .glyph img {
   margin-right: 4px;
 }
-/* line 95, _homepage.scss */
+/* line 165, _homepage.scss */
 .glyph.account:before {
   content: "";
 }
-/* line 100, _homepage.scss */
+/* line 170, _homepage.scss */
 .glyph.cart:before {
   content: "";
 }
 
-/* line 107, _homepage.scss */
+/* line 177, _homepage.scss */
 .homepage-quote .cycle-slideshow {
   max-width: 650px;
   margin: 0 auto;
   position: relative;
 }
-/* line 112, _homepage.scss */
+/* line 182, _homepage.scss */
 .homepage-quote .cycle-slideshow > div {
   width: 100%;
 }
-/* line 116, _homepage.scss */
+/* line 186, _homepage.scss */
 .homepage-quote h2 {
   font-family: "NexaSlab-Book", sans-serif;
   color: #452c0d;
@@ -316,42 +400,42 @@ p {
   text-transform: none;
   text-align: center;
 }
-/* line 127, _homepage.scss */
+/* line 197, _homepage.scss */
 .homepage-quote h2 span {
   font-family: "NexaSlabBookItalic", sans-serif;
   font-size: 17px;
 }
 
-/* line 134, _homepage.scss */
+/* line 204, _homepage.scss */
 .main-footer {
   background: #452c0d;
   color: white;
   padding-top: 40px;
 }
-/* line 138, _homepage.scss */
+/* line 208, _homepage.scss */
 .main-footer a, .main-footer a:link {
   color: white;
   text-transform: uppercase;
   padding-left: 7px;
 }
-/* line 143, _homepage.scss */
+/* line 213, _homepage.scss */
 .main-footer h2.title {
   font-family: "NexaBook", sans-serif;
   text-transform: none;
   margin-bottom: 0;
 }
-/* line 150, _homepage.scss */
+/* line 220, _homepage.scss */
 .main-footer .column-3 .contact-form input[type="email"], .main-footer .column-3 .contact-form .mailchimp-form input[type="email"] {
   font-family: "NexaBook", sans-serif !important;
   font-size: 12px;
   float: left;
 }
-/* line 155, _homepage.scss */
+/* line 225, _homepage.scss */
 .main-footer .column-3 .contact-form input[type="submit"] {
   float: left;
   font-size: 12px;
 }
-/* line 161, _homepage.scss */
+/* line 231, _homepage.scss */
 .main-footer input[type="email"] {
   background: #e8e2d2;
   height: 50px;
@@ -360,26 +444,26 @@ p {
   line-height: 16px;
   font-size: 14px;
 }
-/* line 168, _homepage.scss */
+/* line 238, _homepage.scss */
 .main-footer input[type="email"]::-webkit-input-placeholder {
   color: #452c0d;
 }
-/* line 172, _homepage.scss */
+/* line 242, _homepage.scss */
 .main-footer input[type="email"]:-moz-placeholder {
   /* Firefox 18- */
   color: #452c0d;
 }
-/* line 176, _homepage.scss */
+/* line 246, _homepage.scss */
 .main-footer input[type="email"]::-moz-placeholder {
   /* Firefox 19+ */
   color: #452c0d;
 }
-/* line 180, _homepage.scss */
+/* line 250, _homepage.scss */
 .main-footer input[type="email"]:-ms-input-placeholder {
   color: #452c0d;
 }
 
-/* line 189, _homepage.scss */
+/* line 259, _homepage.scss */
 .template-index .widgets .small-promos img {
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -388,19 +472,19 @@ p {
   transition: opacity .5s ease-in-out;
   opacity: 1;
 }
-/* line 196, _homepage.scss */
+/* line 266, _homepage.scss */
 .template-index .widgets .small-promos img.dim {
   opacity: 0.5;
 }
-/* line 200, _homepage.scss */
+/* line 270, _homepage.scss */
 .template-index .widgets .small-promos .caption {
   display: block;
 }
-/* line 202, _homepage.scss */
+/* line 272, _homepage.scss */
 .template-index .widgets .small-promos .caption .bg {
   background: none;
 }
-/* line 205, _homepage.scss */
+/* line 275, _homepage.scss */
 .template-index .widgets .small-promos .caption .inner {
   padding: 20px;
   background: rgba(66, 45, 17, 0.9);
@@ -409,13 +493,13 @@ p {
   margin-left: -40%;
   margin-top: -57.5px;
 }
-/* line 212, _homepage.scss */
+/* line 282, _homepage.scss */
 .template-index .widgets .small-promos .caption .inner h1 {
   color: #e22a7b;
   font-size: 13px;
   line-height: 15px;
 }
-/* line 217, _homepage.scss */
+/* line 287, _homepage.scss */
 .template-index .widgets .small-promos .caption .inner h2 {
   font-family: "NexaBook", sans-serif;
   color: white;
@@ -423,31 +507,31 @@ p {
   line-height: 25px;
   text-transform: none;
 }
-/* line 229, _homepage.scss */
+/* line 299, _homepage.scss */
 .template-index .social-feeds h3.title {
   font-family: "NexaHeavy", sans-serif;
   font-size: 30px;
   line-height: 34px;
   font-weight: normal;
 }
-/* line 238, _homepage.scss */
+/* line 308, _homepage.scss */
 .template-index .slider .slide img {
   width: 200%;
   max-width: none;
   margin-left: -75%;
 }
-/* line 243, _homepage.scss */
+/* line 313, _homepage.scss */
 .template-index .slider .slide .caption {
   width: 100%;
   margin: 0 auto;
   text-align: center!important;
   float: none!important;
 }
-/* line 248, _homepage.scss */
+/* line 318, _homepage.scss */
 .template-index .slider .slide .caption .bg {
   background: none;
 }
-/* line 251, _homepage.scss */
+/* line 321, _homepage.scss */
 .template-index .slider .slide .caption h2.title {
   font-family: "NexaHeavy", sans-serif;
   color: #452c0d;
@@ -458,11 +542,11 @@ p {
   margin-bottom: 0;
   margin-top: 10px;
 }
-/* line 260, _homepage.scss */
+/* line 330, _homepage.scss */
 .template-index .slider .slide .caption h2.title span {
   font-family: "NexaBook", sans-serif;
 }
-/* line 264, _homepage.scss */
+/* line 334, _homepage.scss */
 .template-index .slider .slide .caption h3.sub-title {
   font-family: "NexaBook", sans-serif;
   color: #452c0d;
@@ -473,7 +557,7 @@ p {
   margin-bottom: 30px;
   margin-top: 10px;
 }
-/* line 274, _homepage.scss */
+/* line 344, _homepage.scss */
 .template-index .slider .slide .caption a.button {
   font-family: "NexaHeavy", sans-serif;
   background: #e22a7b;
@@ -484,16 +568,16 @@ p {
   width: 200px;
   border-radius: 4px;
 }
-/* line 283, _homepage.scss */
+/* line 353, _homepage.scss */
 .template-index .slider .slide .caption a.button:hover {
   background: #920f54;
 }
 
-/* line 295, _homepage.scss */
+/* line 365, _homepage.scss */
 .line .columns p a {
   color: #e22a7b;
 }
-/* line 297, _homepage.scss */
+/* line 367, _homepage.scss */
 .line .columns p a:hover {
   color: #920f54;
 }
@@ -725,50 +809,54 @@ p {
   margin-bottom: 3px;
 }
 /* line 59, _product.scss */
+.template-product article .description .extra-info ul {
+  padding-left: 15px;
+}
+/* line 62, _product.scss */
 .template-product article .description .extra-info li {
-  font-size: 14px;
+  font-size: 13px;
   width: 50%;
   float: left;
   margin-bottom: 3px;
 }
-/* line 68, _product.scss */
+/* line 71, _product.scss */
 .template-product article .quantity label {
   font-family: "NexaBold", sans-serif;
   display: inline-block;
   margin-right: 6px;
 }
-/* line 73, _product.scss */
+/* line 76, _product.scss */
 .template-product article .quantity input {
   background: #f2ecdc;
   display: inline-block;
   height: 40px;
   width: 50px;
 }
-/* line 81, _product.scss */
+/* line 84, _product.scss */
 .template-product .cart-form {
   max-width: 300px;
 }
-/* line 83, _product.scss */
+/* line 86, _product.scss */
 .template-product .cart-form .variants {
   margin-top: 80px;
   max-width: none;
 }
-/* line 86, _product.scss */
+/* line 89, _product.scss */
 .template-product .cart-form .variants label {
   font-family: "NexaBold", sans-serif;
   display: inline-block;
   margin-right: 12px;
   line-height: 36px;
 }
-/* line 91, _product.scss */
+/* line 94, _product.scss */
 .template-product .cart-form .variants label[for="quantity"] {
   margin-right: 3px;
 }
-/* line 97, _product.scss */
+/* line 100, _product.scss */
 .template-product .cart-form.custom .hidden-field {
   display: none;
 }
-/* line 100, _product.scss */
+/* line 103, _product.scss */
 .template-product .cart-form.custom .custom.dropdown {
   background: #f2ecdc;
   display: inline-block;
@@ -776,87 +864,87 @@ p {
   height: 40px;
   padding: 5px;
 }
-/* line 107, _product.scss */
+/* line 110, _product.scss */
 .template-product .cart-form.custom .custom.dropdown ul li {
   padding: 5px 10px;
 }
-/* line 111, _product.scss */
+/* line 114, _product.scss */
 .template-product .cart-form.custom .custom.dropdown .selector {
   height: 40px;
 }
-/* line 117, _product.scss */
+/* line 120, _product.scss */
 .template-product .ingredients {
   padding: 40px 0;
 }
-/* line 119, _product.scss */
+/* line 122, _product.scss */
 .template-product .ingredients .container {
   overflow: hidden;
 }
-/* line 122, _product.scss */
+/* line 125, _product.scss */
 .template-product .ingredients .row {
   max-width: 1600px;
   margin: 10px auto;
   padding: 0;
 }
-/* line 126, _product.scss */
+/* line 129, _product.scss */
 .template-product .ingredients .row .columns {
   padding: 0;
 }
-/* line 128, _product.scss */
+/* line 131, _product.scss */
 .template-product .ingredients .row .columns.left-text {
   padding-left: 2%;
   padding-right: 2%;
 }
-/* line 132, _product.scss */
+/* line 135, _product.scss */
 .template-product .ingredients .row .columns.right-text {
   padding-left: 2%;
   padding-right: 2%;
 }
-/* line 136, _product.scss */
+/* line 139, _product.scss */
 .template-product .ingredients .row .columns img {
   width: 100%;
   max-width: none;
   position: relative;
 }
-/* line 141, _product.scss */
+/* line 144, _product.scss */
 .template-product .ingredients .row .columns.img-right img {
   right: 0;
   float: right;
 }
-/* line 145, _product.scss */
+/* line 148, _product.scss */
 .template-product .ingredients .row .columns.img-left img {
   left: 0;
   float: left;
 }
-/* line 149, _product.scss */
+/* line 152, _product.scss */
 .template-product .ingredients .row .columns.mobile-hide {
   display: none;
 }
-/* line 156, _product.scss */
+/* line 159, _product.scss */
 .template-product .ingredients .row.cardamom .mobile-show {
   margin-top: -29px;
 }
-/* line 159, _product.scss */
+/* line 162, _product.scss */
 .template-product .ingredients .row.cardamom .left-text {
   margin-top: -127px;
 }
-/* line 164, _product.scss */
+/* line 167, _product.scss */
 .template-product .ingredients .row.cinnamon .img-left {
   margin-top: -28px;
 }
-/* line 169, _product.scss */
+/* line 172, _product.scss */
 .template-product .ingredients .row.cloves .mobile-show {
   margin-top: -28px;
 }
-/* line 174, _product.scss */
+/* line 177, _product.scss */
 .template-product .ingredients .row.nutmeg .img-left {
   margin-top: -28px;
 }
-/* line 179, _product.scss */
+/* line 182, _product.scss */
 .template-product .ingredients .row.honey .mobile-show {
   margin-top: -25px;
 }
-/* line 184, _product.scss */
+/* line 187, _product.scss */
 .template-product .ingredients h2 {
   font-size: 25px;
   line-height: 25px;
@@ -864,27 +952,27 @@ p {
   text-transform: none;
   margin-bottom: 10px;
 }
-/* line 191, _product.scss */
+/* line 194, _product.scss */
 .template-product .ingredients p {
   font-family: "NexaLight", sans-serif;
   font-size: 14px;
   line-height: 25px;
   margin-bottom: 10px;
 }
-/* line 196, _product.scss */
+/* line 199, _product.scss */
 .template-product .ingredients p.origin {
   font-family: "NexaBold", sans-serif;
 }
-/* line 198, _product.scss */
+/* line 201, _product.scss */
 .template-product .ingredients p.origin span {
   font-family: "NexaSlabBookItalic", sans-serif;
 }
-/* line 203, _product.scss */
+/* line 206, _product.scss */
 .template-product .ingredients .intro {
   text-align: center;
   margin-bottom: 0;
 }
-/* line 206, _product.scss */
+/* line 209, _product.scss */
 .template-product .ingredients .intro h1 {
   font-family: "NexaSlab-Book", sans-serif;
   text-transform: none;
@@ -892,22 +980,22 @@ p {
   line-height: 47px;
   font-weight: normal;
 }
-/* line 213, _product.scss */
+/* line 216, _product.scss */
 .template-product .ingredients .intro p {
   font-family: "NexaSlab-Book", sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 220, _product.scss */
+/* line 223, _product.scss */
 .template-product .benefits {
   background: #f2ecdc;
   padding: 20px 0;
 }
-/* line 223, _product.scss */
+/* line 226, _product.scss */
 .template-product .benefits .intro {
   text-align: center;
 }
-/* line 225, _product.scss */
+/* line 228, _product.scss */
 .template-product .benefits .intro h1 {
   font-family: "NexaSlab-Book", sans-serif;
   text-transform: none;
@@ -916,56 +1004,56 @@ p {
   font-weight: normal;
   margin-bottom: 30px;
 }
-/* line 233, _product.scss */
+/* line 236, _product.scss */
 .template-product .benefits .intro p {
   font-size: 14px;
   line-height: 24px;
 }
-/* line 238, _product.scss */
+/* line 241, _product.scss */
 .template-product .benefits .row {
   margin: 20px 0;
 }
-/* line 241, _product.scss */
+/* line 244, _product.scss */
 .template-product .benefits .row .columns .check {
   float: left;
   width: 6%;
 }
-/* line 244, _product.scss */
+/* line 247, _product.scss */
 .template-product .benefits .row .columns .check .icomoon {
   color: #e22a7b;
   font-size: 20px;
 }
-/* line 249, _product.scss */
+/* line 252, _product.scss */
 .template-product .benefits .row .columns .copy {
   float: left;
   width: 94%;
 }
-/* line 252, _product.scss */
+/* line 255, _product.scss */
 .template-product .benefits .row .columns .copy h3 {
   text-transform: none;
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 3px;
 }
-/* line 258, _product.scss */
+/* line 261, _product.scss */
 .template-product .benefits .row .columns .copy p {
   font-family: "NexaLight", sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
-/* line 267, _product.scss */
+/* line 270, _product.scss */
 .template-product .how-to-eat {
   padding: 0;
 }
-/* line 269, _product.scss */
+/* line 272, _product.scss */
 .template-product .how-to-eat .intro {
   margin-top: 20px;
 }
-/* line 272, _product.scss */
+/* line 275, _product.scss */
 .template-product .how-to-eat .container {
   text-align: center;
 }
-/* line 275, _product.scss */
+/* line 278, _product.scss */
 .template-product .how-to-eat h1 {
   font-family: "NexaSlab-Book", sans-serif;
   text-transform: none;
@@ -974,28 +1062,28 @@ p {
   font-weight: normal;
   margin-bottom: 10px;
 }
-/* line 283, _product.scss */
+/* line 286, _product.scss */
 .template-product .how-to-eat p {
   font-size: 14px;
   line-height: 24px;
 }
-/* line 287, _product.scss */
+/* line 290, _product.scss */
 .template-product .how-to-eat .row {
   margin: 20px 0;
 }
-/* line 290, _product.scss */
+/* line 293, _product.scss */
 .template-product .how-to-eat .tip {
   margin-top: 40px;
 }
-/* line 292, _product.scss */
+/* line 295, _product.scss */
 .template-product .how-to-eat .tip p {
   color: #e22a7b;
 }
-/* line 296, _product.scss */
+/* line 299, _product.scss */
 .template-product .how-to-eat .full-img {
   overflow: hidden;
 }
-/* line 298, _product.scss */
+/* line 301, _product.scss */
 .template-product .how-to-eat .full-img img {
   width: 100%;
 }
@@ -1096,6 +1184,15 @@ p {
   -webkit-appearance: none;
 }
 
+/* line 1, _account.scss */
+#login, #register {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  float: none;
+  padding: 0 20px;
+}
+
 /* line 2, _cart.scss */
 .template-cart .main-content {
   text-align: center;
@@ -1142,44 +1239,53 @@ p {
     margin-left: -45%;
   }
 
-  /* line 19, _breakpoints.scss */
+  /* line 17, _breakpoints.scss */
+  .main-header .top.row {
+    display: block;
+  }
+  /* line 20, _breakpoints.scss */
+  .main-header h1.title {
+    max-width: none;
+  }
+
+  /* line 27, _breakpoints.scss */
   .main-footer .column-2 .footer-nav li {
     margin-bottom: 7px;
   }
-  /* line 22, _breakpoints.scss */
+  /* line 30, _breakpoints.scss */
   .main-footer .column-2 .footer-nav li a:hover {
     color: #83694e;
   }
-  /* line 31, _breakpoints.scss */
+  /* line 39, _breakpoints.scss */
   .main-footer .column-3 .contact-form input[type="email"], .main-footer .column-3 .contact-form .mailchimp-form input[type="email"] {
     font-size: 14px;
   }
-  /* line 34, _breakpoints.scss */
+  /* line 42, _breakpoints.scss */
   .main-footer .column-3 .contact-form input[type="submit"] {
     font-size: 14px;
   }
 
-  /* line 43, _breakpoints.scss */
+  /* line 51, _breakpoints.scss */
   .template-index .slider .slide img {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
   }
-  /* line 48, _breakpoints.scss */
+  /* line 56, _breakpoints.scss */
   .template-index .slider .slide .caption {
     max-width: 400px;
     margin-left: 16%;
     text-align: left!important;
     float: left!important;
   }
-  /* line 53, _breakpoints.scss */
+  /* line 61, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 36px;
     line-height: 38px;
     max-width: 200px;
     margin-top: 69px;
   }
-  /* line 59, _breakpoints.scss */
+  /* line 67, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 13px;
     line-height: 20px;
@@ -1188,294 +1294,298 @@ p {
     margin-top: 0;
   }
 
-  /* line 71, _breakpoints.scss */
+  /* line 79, _breakpoints.scss */
   .page-our-story .main-footer {
     margin-top: 50px;
   }
 
-  /* line 76, _breakpoints.scss */
+  /* line 84, _breakpoints.scss */
   .page-tiki-carts .main-footer {
     margin-top: 50px;
   }
-  /* line 79, _breakpoints.scss */
+  /* line 87, _breakpoints.scss */
   .page-tiki-carts #dondeLocator {
     height: auto;
   }
 
-  /* line 83, _breakpoints.scss */
+  /* line 91, _breakpoints.scss */
   .banner {
     height: 600px;
     height: 600px;
   }
-  /* line 86, _breakpoints.scss */
+  /* line 94, _breakpoints.scss */
   .banner h1 {
     font-size: 57px;
     line-height: 57px;
   }
-  /* line 90, _breakpoints.scss */
+  /* line 98, _breakpoints.scss */
   .banner h5 {
     font-size: 20px;
     line-height: 25px;
   }
 
-  /* line 95, _breakpoints.scss */
+  /* line 103, _breakpoints.scss */
   .line {
     margin: 40px 0;
   }
-  /* line 97, _breakpoints.scss */
+  /* line 105, _breakpoints.scss */
   .line h1 {
     font-size: 48px;
     line-height: 57px;
   }
-  /* line 101, _breakpoints.scss */
+  /* line 109, _breakpoints.scss */
   .line h2:not(.title-web):not(.distance-web):not(.mobile-title-web) {
     font-size: 51px;
     line-height: 51px;
   }
-  /* line 105, _breakpoints.scss */
+  /* line 113, _breakpoints.scss */
   .line .quote-line {
     padding: 0 50px;
     margin-top: 80px;
   }
-  /* line 109, _breakpoints.scss */
+  /* line 117, _breakpoints.scss */
   .line p:not(.ng-binding) {
     font-size: 22px;
     line-height: 32px;
   }
-  /* line 112, _breakpoints.scss */
+  /* line 120, _breakpoints.scss */
   .line p:not(.ng-binding).quote {
     margin-left: 50%;
   }
-  /* line 116, _breakpoints.scss */
+  /* line 124, _breakpoints.scss */
   .line .contact {
     margin: 20px 40px 0 0;
   }
-  /* line 120, _breakpoints.scss */
+  /* line 128, _breakpoints.scss */
   .line.private-events h2, .line.locator h2 {
     margin-top: 0;
   }
 
-  /* line 126, _breakpoints.scss */
+  /* line 134, _breakpoints.scss */
   .intro p {
     font-size: 22px;
     line-height: 32px;
   }
 
-  /* line 132, _breakpoints.scss */
+  /* line 140, _breakpoints.scss */
   .template-product article {
     padding-top: 50px;
   }
-  /* line 134, _breakpoints.scss */
+  /* line 142, _breakpoints.scss */
   .template-product article h1 {
     font-size: 57px;
     line-height: 57px;
   }
-  /* line 138, _breakpoints.scss */
+  /* line 146, _breakpoints.scss */
   .template-product article .prices {
     margin-bottom: 20px;
   }
-  /* line 140, _breakpoints.scss */
+  /* line 148, _breakpoints.scss */
   .template-product article .prices .actual-price {
     font-size: 38px;
     line-height: 38px;
   }
-  /* line 144, _breakpoints.scss */
+  /* line 152, _breakpoints.scss */
   .template-product article .prices .compare-price {
     font-size: 38px;
     line-height: 38px;
   }
-  /* line 150, _breakpoints.scss */
+  /* line 158, _breakpoints.scss */
   .template-product article .description p {
     font-size: 18px;
     line-height: 26px;
   }
-  /* line 155, _breakpoints.scss */
+  /* line 163, _breakpoints.scss */
+  .template-product article .description .extra-info ul {
+    padding-left: 20px;
+  }
+  /* line 166, _breakpoints.scss */
   .template-product article .description .extra-info li {
     width: 40%;
     font-size: 18px;
   }
-  /* line 163, _breakpoints.scss */
+  /* line 174, _breakpoints.scss */
   .template-product .cart-form .variants {
     margin-top: 100px;
   }
-  /* line 168, _breakpoints.scss */
+  /* line 179, _breakpoints.scss */
   .template-product .ingredients p {
     font-size: 18px;
     line-height: 26px;
   }
-  /* line 172, _breakpoints.scss */
+  /* line 183, _breakpoints.scss */
   .template-product .ingredients .intro {
     margin-bottom: 20px;
   }
-  /* line 174, _breakpoints.scss */
+  /* line 185, _breakpoints.scss */
   .template-product .ingredients .intro h1 {
     font-size: 57px;
     line-height: 57px;
   }
-  /* line 178, _breakpoints.scss */
+  /* line 189, _breakpoints.scss */
   .template-product .ingredients .intro p {
     font-size: 22px;
     line-height: 29px;
   }
-  /* line 184, _breakpoints.scss */
+  /* line 195, _breakpoints.scss */
   .template-product .benefits {
     padding: 50px 0;
   }
-  /* line 186, _breakpoints.scss */
+  /* line 197, _breakpoints.scss */
   .template-product .benefits .intro {
     margin-bottom: 0px;
   }
-  /* line 188, _breakpoints.scss */
+  /* line 199, _breakpoints.scss */
   .template-product .benefits .intro h1 {
     font-size: 57px;
     line-height: 57px;
     margin-bottom: 60px;
   }
-  /* line 193, _breakpoints.scss */
+  /* line 204, _breakpoints.scss */
   .template-product .benefits .intro p {
     font-size: 22px;
     line-height: 29px;
   }
-  /* line 201, _breakpoints.scss */
+  /* line 212, _breakpoints.scss */
   .template-product .benefits .row .columns .copy p {
     font-size: 18px;
     line-height: 26px;
   }
-  /* line 210, _breakpoints.scss */
+  /* line 221, _breakpoints.scss */
   .template-product .how-to-eat .intro {
     margin-top: 40px;
   }
-  /* line 212, _breakpoints.scss */
+  /* line 223, _breakpoints.scss */
   .template-product .how-to-eat .intro h1 {
     font-size: 57px;
     line-height: 57px;
     margin-bottom: 30px;
   }
-  /* line 217, _breakpoints.scss */
+  /* line 228, _breakpoints.scss */
   .template-product .how-to-eat .intro p {
     font-size: 22px;
     line-height: 29px;
   }
-  /* line 221, _breakpoints.scss */
+  /* line 232, _breakpoints.scss */
   .template-product .how-to-eat .intro .row {
     margin: 80px 0;
   }
 
-  /* line 228, _breakpoints.scss */
+  /* line 239, _breakpoints.scss */
   .slider .controls {
     height: 220px;
     margin-top: -110px;
   }
-  /* line 231, _breakpoints.scss */
+  /* line 242, _breakpoints.scss */
   .slider .controls img {
     width: 100%;
     height: auto;
   }
 
-  /* line 239, _breakpoints.scss */
+  /* line 250, _breakpoints.scss */
   .template-product .ingredients .intro {
     margin-bottom: 80px;
   }
-  /* line 241, _breakpoints.scss */
+  /* line 252, _breakpoints.scss */
   .template-product .ingredients .intro h1 {
     margin-bottom: 30px;
   }
-  /* line 245, _breakpoints.scss */
+  /* line 256, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 10px auto;
   }
-  /* line 247, _breakpoints.scss */
+  /* line 258, _breakpoints.scss */
   .template-product .ingredients .row .columns {
     padding: 0;
   }
-  /* line 249, _breakpoints.scss */
+  /* line 260, _breakpoints.scss */
   .template-product .ingredients .row .columns.left-text {
     padding-left: 2%;
   }
-  /* line 252, _breakpoints.scss */
+  /* line 263, _breakpoints.scss */
   .template-product .ingredients .row .columns.right-text {
     padding-right: 2%;
   }
-  /* line 255, _breakpoints.scss */
+  /* line 266, _breakpoints.scss */
   .template-product .ingredients .row .columns img {
     position: absolute;
     max-width: none;
   }
-  /* line 259, _breakpoints.scss */
+  /* line 270, _breakpoints.scss */
   .template-product .ingredients .row .columns.img-right img {
     float: none;
   }
-  /* line 262, _breakpoints.scss */
+  /* line 273, _breakpoints.scss */
   .template-product .ingredients .row .columns.img-left img {
     float: none;
   }
-  /* line 265, _breakpoints.scss */
+  /* line 276, _breakpoints.scss */
   .template-product .ingredients .row .columns.mobile-show {
     display: none;
   }
-  /* line 268, _breakpoints.scss */
+  /* line 279, _breakpoints.scss */
   .template-product .ingredients .row .columns.mobile-hide {
     display: inline-block;
   }
-  /* line 273, _breakpoints.scss */
+  /* line 284, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 138%;
     top: -62px;
   }
-  /* line 279, _breakpoints.scss */
+  /* line 290, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -13px;
   }
-  /* line 282, _breakpoints.scss */
+  /* line 293, _breakpoints.scss */
   .template-product .ingredients .row.cardamom .left-text {
     margin-top: 0;
   }
-  /* line 285, _breakpoints.scss */
+  /* line 296, _breakpoints.scss */
   .template-product .ingredients .row.cardamom .img-right {
     margin-top: -30px;
   }
-  /* line 290, _breakpoints.scss */
+  /* line 301, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: 80px;
   }
-  /* line 293, _breakpoints.scss */
+  /* line 304, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon .img-left {
     margin-top: -100px;
   }
-  /* line 298, _breakpoints.scss */
+  /* line 309, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: 0px;
   }
-  /* line 301, _breakpoints.scss */
+  /* line 312, _breakpoints.scss */
   .template-product .ingredients .row.cloves .img-right {
     margin-top: -18px;
   }
-  /* line 306, _breakpoints.scss */
+  /* line 317, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: 78px;
   }
-  /* line 309, _breakpoints.scss */
+  /* line 320, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg .img-left {
     margin-top: -82px;
   }
-  /* line 314, _breakpoints.scss */
+  /* line 325, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: 5px;
   }
-  /* line 317, _breakpoints.scss */
+  /* line 328, _breakpoints.scss */
   .template-product .ingredients .row.honey .img-right {
     margin-top: -14px;
   }
 }
 @media only screen and (min-width: 890px) {
-  /* line 331, _breakpoints.scss */
+  /* line 342, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 47px;
     line-height: 47px;
     max-width: 300px;
     margin-top: 40px;
   }
-  /* line 337, _breakpoints.scss */
+  /* line 348, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 17px;
     line-height: 22px;
@@ -1484,94 +1594,94 @@ p {
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 356, _breakpoints.scss */
+  /* line 367, _breakpoints.scss */
   .template-index .widgets .small-promos .caption .inner {
     width: 300px;
     margin-left: -150px;
   }
 
-  /* line 366, _breakpoints.scss */
+  /* line 377, _breakpoints.scss */
   .template-product .ingredients .intro {
     margin-bottom: 20px;
   }
-  /* line 369, _breakpoints.scss */
+  /* line 380, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 50px auto;
   }
-  /* line 372, _breakpoints.scss */
+  /* line 383, _breakpoints.scss */
   .template-product .ingredients .row .columns.left-text {
     padding-left: 10%;
   }
-  /* line 375, _breakpoints.scss */
+  /* line 386, _breakpoints.scss */
   .template-product .ingredients .row .columns.right-text {
     padding-right: 10%;
   }
-  /* line 380, _breakpoints.scss */
+  /* line 391, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     top: -2px;
   }
-  /* line 385, _breakpoints.scss */
+  /* line 396, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -49px;
   }
-  /* line 390, _breakpoints.scss */
+  /* line 401, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: 42px;
   }
-  /* line 395, _breakpoints.scss */
+  /* line 406, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: -37px;
   }
-  /* line 400, _breakpoints.scss */
+  /* line 411, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: 24px;
   }
-  /* line 405, _breakpoints.scss */
+  /* line 416, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -57px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 419, _breakpoints.scss */
+  /* line 430, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 47px;
     line-height: 50px;
     margin-top: 63px;
   }
-  /* line 424, _breakpoints.scss */
+  /* line 435, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 22px;
     line-height: 26px;
     max-width: 280px;
     margin-bottom: 50px;
   }
-  /* line 430, _breakpoints.scss */
+  /* line 441, _breakpoints.scss */
   .template-index .slider .slide .caption a.button {
     font-size: 18px;
     line-height: 15px;
   }
 
-  /* line 442, _breakpoints.scss */
+  /* line 453, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     top: -91px;
   }
-  /* line 447, _breakpoints.scss */
+  /* line 458, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -24px;
   }
-  /* line 452, _breakpoints.scss */
+  /* line 463, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -44px;
   }
 }
 @media only screen and (min-width: 1120px) {
-  /* line 466, _breakpoints.scss */
+  /* line 477, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 57px;
     line-height: 57px;
     margin-top: 46px;
   }
-  /* line 471, _breakpoints.scss */
+  /* line 482, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 23px;
     line-height: 29px;
@@ -1580,13 +1690,13 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 490, _breakpoints.scss */
+  /* line 501, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 57px;
     line-height: 57px;
     margin-top: 20px;
   }
-  /* line 495, _breakpoints.scss */
+  /* line 506, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 25px;
     line-height: 30px;
@@ -1594,83 +1704,83 @@ p {
     margin-bottom: 50px;
   }
 
-  /* line 507, _breakpoints.scss */
+  /* line 518, _breakpoints.scss */
   .template-product .ingredients .intro {
     margin-bottom: 80px;
   }
-  /* line 510, _breakpoints.scss */
+  /* line 521, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 100px auto;
   }
-  /* line 513, _breakpoints.scss */
+  /* line 524, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 138%;
     top: -98px;
   }
-  /* line 519, _breakpoints.scss */
+  /* line 530, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -83px;
   }
-  /* line 524, _breakpoints.scss */
+  /* line 535, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: -10px;
   }
-  /* line 529, _breakpoints.scss */
+  /* line 540, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: -92px;
   }
-  /* line 534, _breakpoints.scss */
+  /* line 545, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: -29px;
   }
-  /* line 539, _breakpoints.scss */
+  /* line 550, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -90px;
   }
 }
 @media only screen and (min-width: 1300px) {
-  /* line 551, _breakpoints.scss */
+  /* line 562, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 120px auto;
   }
-  /* line 553, _breakpoints.scss */
+  /* line 564, _breakpoints.scss */
   .template-product .ingredients .row.coconut {
     margin-top: 0;
   }
-  /* line 555, _breakpoints.scss */
+  /* line 566, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 118%;
     top: -40px;
   }
-  /* line 561, _breakpoints.scss */
+  /* line 572, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -101px;
   }
-  /* line 566, _breakpoints.scss */
+  /* line 577, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: -30px;
   }
-  /* line 571, _breakpoints.scss */
+  /* line 582, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: -103px;
   }
-  /* line 576, _breakpoints.scss */
+  /* line 587, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: -25px;
   }
-  /* line 581, _breakpoints.scss */
+  /* line 592, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -116px;
   }
 }
 @media only screen and (min-width: 1350px) {
-  /* line 595, _breakpoints.scss */
+  /* line 606, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     top: -94px;
   }
 }
 @media only screen and (min-width: 1490px) {
-  /* line 609, _breakpoints.scss */
+  /* line 620, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 107%;
     top: -99px;

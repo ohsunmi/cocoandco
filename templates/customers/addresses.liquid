@@ -3,7 +3,7 @@
   <div class="row">
     <div class="columns large-12">
       <h1 class="page-title">{{ 'customer.addresses.page_title' | t }}</h1>
-      {% include 'snippet-breadcrumbs' %}
+      {% comment %}{% include 'snippet-breadcrumbs' %}{% endcomment %}
     </div> 
   </div> 
 
@@ -83,7 +83,7 @@
               </tr>
             </table>
             <div class="action_bottom">
-              <input class="button" type="submit" value="{{ 'customer.addresses.update' | t }}" />
+              <input class="button btn" type="submit" value="{{ 'customer.addresses.update' | t }}" />
               <span class="note"><a style="margin-left: 15px;" href="#" onclick="Shopify.CustomerAddress.toggleForm({{form.id}}); return false;">{{ 'customer.addresses.cancel' | t }}</a></span>
             </div>        
             {% endform %}
@@ -151,7 +151,7 @@
           </tr>
         </table>
         <div class="action_bottom">
-          <input class="button" type="submit" value="{{ 'customer.addresses.add' | t }}" />
+          <input class="button btn" type="submit" value="{{ 'customer.addresses.add' | t }}" />
           <span class="note"><a style="margin-left: 15px;" href="#" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.cancel' | t }}</a></span>
         </div>
         {% endform %}

@@ -108,18 +108,47 @@
         </div>
         
         <div class="columns cart-container">
-          {% include 'snippet-cart' %}
+          {% comment %}{% include 'snippet-cart' %}{% endcomment %}
+          <div class="cart">
+            <div class="show-for-small hide-for-ie9-down">
+              <div class="recently-added-mask hide"></div>
+              <div class="recently-added mobile">
+                <a aria-hidden="true" class="close glyph cross"></a>
+                
+
+                <div class="row">
+                  <div class="columns">
+                    <p><strong class="all-caps">{{ 'products.recently_added_popup.title' | t }}</strong></p>
+                    <p class="mobile-item"></p>
+                    <p class="items-count"><a href="/cart"><span class="number">{{ cart.item_count }}</span> {{ 'products.recently_added_popup.items' | t }}</a></p>
+                    <p><strong class="all-caps">{{ 'products.recently_added_popup.total' | t }} <span class="total-price" style="margin-left:5px;">{{ cart.total_price | money }}</span></strong></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="checkout columns">
+                    <a class="btn" href="/cart">{{ 'products.recently_added_popup.checkout_button' | t }}</a>
+                  </div><!-- #cart-meta -->
+                </div>
+
+                <div class="error">
+                  <p>{{ 'products.recently_added_popup.unavailable' | t }}</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="mobile-tools">
           <a class="glyph menu" href=""></a>
-          {% if settings.header-search-show %}
+          {% comment %}{% if settings.header-search-show %}
           <a href="/search" class="glyph search"></a>
-          {% endif %}
-          {% if settings.header-account-show and shop.customer_accounts_enabled %}
-          <a href="/account" class="glyph account"></a>
-          {% endif %}
-          <a href="/cart" class="glyph cart"><span class="icomoon cart"></span></a>
+          {% endif %}{% endcomment %}
+          <a style="background:url({{ 'logo-mobile.svg' | asset_url}}); background-size:cover;" href="/" role="banner" title="{{ shop.name }}"  alt="{{ shop.name }}" class="logo-mobile">
+           {% comment %} <img src="{{ 'logo-mobile.svg' | asset_url }}">{% endcomment %} 
+          </a>
+          <a href="/cart" class="glyph cart"><span class="icomoon cart-ico"><span class="number">{{ cart.item_count }}</span></span></a>
         </div>
       </div>
     </div>

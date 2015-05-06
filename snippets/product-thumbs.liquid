@@ -1,0 +1,32 @@
+{% comment %}{% if product.images.size > 1%}
+      <style>
+      .thumbs .image { margin: 15px 0 }
+      .thumbs .image { padding: 0 5px }
+      .thumbs .last-in-row { padding-right: 0 }
+      </style>
+{% endif %}{% endcomment %}
+      
+<!-- create a separate thumbnail slider for each variant of the product -->
+{% comment %}<div class="arrows-frame" style="background: red; position: absolute; height: 50px; z-index: 1000;">        
+  <span class="prev"></span>
+  <span class="next"></span>
+</div>{% endcomment %}
+
+{% for variant in product.variants %}
+  {% assign thisSku = variant.sku %}    
+  <div class="thumbs thumbnails-nav" data-sku="{{thisSku}}">
+    <ul class="clearfix row">
+    {% for image in product.images %}
+    {% if image.alt contains thisSku %}
+      <li class="thumb">
+      <a href="{{ image | product_img_url: 'master' }}" data-original-image="{{ image | product_img_url: 'master' }}">
+        <img class="lazy" src="{{ image | product_img_url: 'master' }}" alt="{{ image.alt | escape }}">
+      </a>
+      </li>
+    {% endif %}
+    {% endfor %}  
+    </ul>
+  </div>
+
+{% endfor %}
+  
