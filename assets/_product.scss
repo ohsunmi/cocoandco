@@ -2,6 +2,16 @@
 	.main-content {
 		padding: 0;
 	}
+	.thumbs {
+		&.thumbnails-nav {
+			.thumb {
+				display: none;
+				&.show {
+					display: inline-block;
+				}
+			}
+		}
+	}
 	article {
 		padding-bottom: 0;
 		.add-to-cart {
@@ -46,6 +56,8 @@
 		.description {
 			font-family: $nexa-light;
 			color: $brown;
+			overflow: hidden;
+			margin-bottom: 20px;
 			p {
 				font-size: 14px;
 				line-height: 22px;
@@ -84,7 +96,7 @@
 	.cart-form {
 		max-width: 300px;
 		.variants {
-			margin-top: 80px;
+			margin-top: 10px;
 			max-width: none;
 			label {
 				font-family: $nexa-bold;
@@ -303,4 +315,9 @@
 			}
 		}
 	}
+}
+
+.buffer {
+	height: 30px;
+	width: 100%;
 }

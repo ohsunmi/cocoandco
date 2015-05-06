@@ -1008,6 +1008,7 @@
           } else {
             updateActiveImg(0);
           }
+          changeThumbnails(variant.sku);
         }
       };
       // end of selectCallback;
@@ -1070,3 +1071,10 @@
   return false;
 
 }).call(this);
+
+function changeThumbnails(sku) {
+  var itemSku = sku;
+  var thumbList = '.thumbnails-nav li.thumb[data-sku="' + itemSku + '"]';
+  $('.thumbnails-nav li.thumb').removeClass('show');
+  $(thumbList).addClass('show');
+}

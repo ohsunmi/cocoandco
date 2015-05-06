@@ -1,3 +1,6 @@
+{% if product.title == 'test product' %}
+  {% include 'product-thumbs' %}
+{% else %}
 <header>
   <div class="previous-next row">
     {% if collection %}
@@ -81,10 +84,6 @@
               </li>
             {% endfor %}
           </ul>
-
-          <div style="display:none;">
-            {% include 'product-thumbs' %}
-          </div>
         {% endif %}
       </div>
     </div>
@@ -116,15 +115,25 @@
       <div class="description">
         <div itemprop="description" class="rte-content">
           {{ product.description }}
+          {% if product.metafields.c_f.product_list_title != '' %}
           <div class="extra-info">
             <p>{{ product.metafields.c_f.product_list_title }}</p>
             <ul>
-              <li>{{ product.metafields.c_f.product_list_item1 }}</li>
-              <li>{{ product.metafields.c_f.product_list_item2 }}</li>
-              <li>{{ product.metafields.c_f.product_list_item3 }}</li>
-              <li>{{ product.metafields.c_f.product_list_item4 }}</li>
+              {% if product.metafields.c_f.product_list_item1 != '' %}
+                <li>{{ product.metafields.c_f.product_list_item1 }}</li>
+              {% endif %}
+              {% if product.metafields.c_f.product_list_item2 != '' %}
+                <li>{{ product.metafields.c_f.product_list_item2 }}</li>
+              {% endif %}
+              {% if product.metafields.c_f.product_list_item3 != '' %}
+                <li>{{ product.metafields.c_f.product_list_item3 }}</li>
+              {% endif %}
+              {% if product.metafields.c_f.product_list_item4 != '' %}
+                <li>{{ product.metafields.c_f.product_list_item4 }}</li>
+              {% endif %}
             </ul>
           </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -395,3 +404,4 @@
   // Looking for the selectCallback function?
   // You can find it by searching 'selectCallback' in the assets > shop.js
 </script>
+{% endif %}
