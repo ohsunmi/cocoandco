@@ -1,0 +1,152 @@
+.page-recipes-all-food, .page-recipes-all-drinks {
+	.main-content {
+		padding: 0;
+	}
+}
+.page-recipes {
+	.main-content {
+		padding: 0;
+	}
+	.slider {
+		.slide {
+			width: 100%;
+			position: relative;
+			.text-box {
+				background: rgba(66, 45, 17, 0.9);
+				max-width: 175px;
+				top: 11%;
+				left: 12%;
+				padding: 14px 10px 10px 10px;
+				position: absolute;
+				p {
+					font-family: $nexaslab-light;
+				  color: $white;
+				  font-size: 12px;
+				  line-height: 15px;
+				  margin-bottom: 0;
+				  a {
+				  	color: $white;
+				  	margin-top: 3px;
+				  	&:hover {
+				  		color: $hovercolor;
+				  	}
+				  }
+				}
+				h3 {
+					margin-bottom: 5px;
+					p {
+						font-family: $nexa-heavy;
+						color: $pink;
+						font-size: 11px;
+					  line-height: 13px;
+					}
+				}
+				h2 {
+					margin-bottom: 0;
+					p {
+					  font-family: $nexaslab-book;
+					  color: $white;
+					 	font-size: 14px;
+					  line-height: 17px;
+					  text-transform: none;
+					  margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.recipes-row {
+	padding: 0 0 10px;
+	border-bottom: 1px solid $hovercolor;
+	overflow: hidden;
+	h1 {
+		font-size: 25px;
+		line-height: 25px;
+	}
+	a {
+		&:hover {
+			color: $hovercolor;
+		}
+	}
+	.top {
+		position: relative;
+		margin: 20px 0 0;
+		h1 {
+			text-transform: none;
+		}
+	}
+	.view-all {
+		position: absolute;
+		top: 6px;
+		right: 1.25em;
+	}
+	.recipe-block {
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+		}
+		h1 {
+			font-family: $nexa-bold;
+			font-size: 25px;
+			line-height: 38px;
+			text-transform: none;
+			margin: 10px 0;
+		}
+		p {
+			font-size: 19px;
+			line-height: 23px;
+			margin-bottom: 4px;
+		}
+		a {
+			font-size: 19px;
+			line-height: 23px;
+		}
+	}
+	&.drinks {
+		padding-top: 10px;
+	}
+	&.single {
+		padding-top: 50px;
+		border-bottom: none;
+	}
+}
+
+.tag-tray {
+	padding: 20px 0 0;
+	.top {
+		padding: 0 1.25em;
+	}
+	h1 {
+		font-size: 28px;
+		line-height: 30px;
+		margin-bottom: 4px;
+		text-transform: none;
+		p {
+			margin-bottom: 0;
+		}
+		&.pink {
+			p {
+				font-size: 25px;
+				line-height: 28px;
+				margin-top: 20px;
+				padding: 0 20px;
+				color: $pink;
+				text-align: center;
+			}
+			a {
+				color: $pink;
+				text-decoration: underline;
+				&:hover {
+					color: $pinkhover;
+				}
+			}
+		}
+	}
+	h2 {
+		font-size: 16px;
+		line-height: 21px;
+		text-transform: none;
+	}
+}

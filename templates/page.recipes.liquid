@@ -1,0 +1,107 @@
+<div class="slider">
+  <div class="prevControl controls">{{ 'prev_arrow_gray.png' | asset_url | img_tag }}</div>
+  <div class="nextControl controls">{{ 'next_arrow_gray.png' | asset_url | img_tag }}</div>
+  <div class="cycle-slideshow"
+    data-cycle-fx="scrollHorz"
+    data-cycle-pause-on-hover="true"
+    data-cycle-speed="500"
+    data-cycle-timeout="20000"
+    data-cycle-prev=".prevControl"
+    data-cycle-next=".nextControl"
+    data-cycle-slides="> div"
+  >
+		<div class="slide">
+      {{ 'recipes_bg_1.jpg' | asset_url | img_tag }}
+      <div class="text-box">
+        {% assign paras = pages.recipes-slide-1.content | split: '</p>' %}
+        <h3>{{ paras[0] }}</h3>
+        <h2>{{ paras[1] }}</h2>
+        {{ paras[2] }}
+        {{ paras[3] }}
+      </div>
+    </div>
+    <div class="slide">
+      {{ 'recipes_bg_2.jpg' | asset_url | img_tag }}
+      <div class="text-box">
+        {% assign paras = pages.recipes-slide-2.content | split: '</p>' %}
+        <h3>{{ paras[0] }}</h3>
+        <h2>{{ paras[1] }}</h2>
+        {{ paras[2] }}
+        {{ paras[3] }}
+      </div>
+    </div>
+    <div class="slide">
+      {{ 'recipes_bg_3.jpg' | asset_url | img_tag }}
+      <div class="text-box">
+        {% assign paras = pages.recipes-slide-3.content | split: '</p>' %}
+        <h3>{{ paras[0] }}</h3>
+        <h2>{{ paras[1] }}</h2>
+        {{ paras[2] }}
+        {{ paras[3] }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="recipes-row drinks">
+      <div class="columns large-12 top">
+        <h1>Drink Recipes</h1>
+        <p><a href="/pages/recipes-all-drinks" class="view-all">View All ></a></p>
+      </div>
+      {% for article in blogs.drink-recipes.articles %}
+        {% if article.content contains "<img" %}
+          {% assign src = article.content | split: 'src="' %}
+          {% assign src = src[1] | split: '"' | first | replace: '//cdn', 'http://cdn'; | replace: 'http:http://';, 'http://'; | remove: 'https:' %}
+        {% endif %}
+        <div class="columns small-12 medium-4 large-4 recipe-block">
+          {{ src | img_tag }}
+          <h1>{{ article.title }}</h1>
+          <p>{{ article.excerpt }}</p>
+          <a href="#">View more...</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row">
+     <div class="recipes-row food">
+      <div class="columns large-12 top">
+        <h1>Food Recipes</h1>
+        <p><a href="/pages/recipes-all-food" class="view-all">View All ></a></p>
+      </div>
+      {% for article in blogs.food-recipes.articles %}
+        {% if article.content contains "<img" %}
+          {% assign src = article.content | split: 'src="' %}
+          {% assign src = src[1] | split: '"' | first | replace: '//cdn', 'http://cdn'; | replace: 'http:http://';, 'http://'; | remove: 'https:' %}
+        {% endif %}
+        <div class="columns small-12 large-4 recipe-block">
+          {{ src | img_tag }}
+          <h1>{{ article.title }}</h1>
+          <p>{{ article.excerpt }}</p>
+          <a href="#">View more...</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="tag-tray columns large-12">
+      <div class="top">
+        {% assign paras = pages.recipes.content | split: '</p>' %}
+        <h1>{{ paras[0] }}</h1>
+        <h2>{{ paras[1] }}</h2>
+      </div>
+      <div class="tagtray-gallery"
+        data-gallery-code="1431569841"
+        data-hide-source-icon="true"
+        data-max-num-pages="1"
+        data-page-size="4"
+        data-layout-type="responsive"
+        data-grid-options="tagtray-col-xs-6 tagtray-col-sm-3 tagtray-col-md-3 tagtray-col-lg-3 tagtray-item"
+      >
+      </div>
+      <h1 class="pink">{{ paras[2] }}</h1>
+    </div>
+  </div>
+</div>
