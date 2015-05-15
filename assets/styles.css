@@ -1333,7 +1333,7 @@ p {
 /* line 73, _recipes.scss */
 .recipes-row .top {
   position: relative;
-  margin: 20px 0 0;
+  margin: 30px 0 0;
 }
 /* line 76, _recipes.scss */
 .recipes-row .top h1 {
@@ -1359,7 +1359,7 @@ p {
   font-size: 25px;
   line-height: 38px;
   text-transform: none;
-  margin: 10px 0;
+  margin: 15px 0 10px;
 }
 /* line 97, _recipes.scss */
 .recipes-row .recipe-block p {
@@ -1817,59 +1817,78 @@ p {
   /* line 371, _breakpoints.scss */
   .recipes-row .view-all {
     top: 10px;
+    right: 0;
   }
-  /* line 375, _breakpoints.scss */
+  /* line 376, _breakpoints.scss */
   .recipes-row .recipe-block h1 {
     font-size: 30px;
     line-height: 32px;
   }
-  /* line 379, _breakpoints.scss */
+  /* line 380, _breakpoints.scss */
   .recipes-row .recipe-block p {
     font-size: 24px;
     line-height: 28px;
   }
-  /* line 383, _breakpoints.scss */
+  /* line 384, _breakpoints.scss */
   .recipes-row .recipe-block a {
     font-size: 24px;
     line-height: 28px;
   }
-  /* line 388, _breakpoints.scss */
+  /* line 389, _breakpoints.scss */
   .recipes-row.drinks {
     padding-top: 50px;
   }
 
-  /* line 392, _breakpoints.scss */
+  /* line 393, _breakpoints.scss */
   .tag-tray {
     padding: 40px 0;
   }
-  /* line 394, _breakpoints.scss */
+  /* line 395, _breakpoints.scss */
+  .tag-tray .top {
+    padding: 0;
+  }
+  /* line 398, _breakpoints.scss */
+  .tag-tray .TagTrayImageBlock {
+    padding: 0;
+  }
+  /* line 401, _breakpoints.scss */
   .tag-tray h1 {
     font-size: 37px;
     line-height: 39px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
-  /* line 399, _breakpoints.scss */
+  /* line 406, _breakpoints.scss */
   .tag-tray h1.pink p {
-    font-size: 43px;
-    line-height: 47px;
-    margin-top: 40px;
+    font-size: 37px;
+    line-height: 45px;
+    margin: 40px auto 0;
     padding: 0;
+    max-width: 850px;
   }
-  /* line 407, _breakpoints.scss */
+  /* line 415, _breakpoints.scss */
   .tag-tray h2 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* line 421, _breakpoints.scss */
+  .columns.alpha {
+    padding-left: 0;
+  }
+  /* line 424, _breakpoints.scss */
+  .columns.omega {
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 890px) {
-  /* line 419, _breakpoints.scss */
+  /* line 435, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 47px;
     line-height: 47px;
     max-width: 300px;
     margin-top: 40px;
   }
-  /* line 425, _breakpoints.scss */
+  /* line 441, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 17px;
     line-height: 22px;
@@ -1878,94 +1897,94 @@ p {
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 444, _breakpoints.scss */
+  /* line 460, _breakpoints.scss */
   .template-index .widgets .small-promos .caption .inner {
     width: 300px;
     margin-left: -150px;
   }
 
-  /* line 454, _breakpoints.scss */
+  /* line 470, _breakpoints.scss */
   .template-product .ingredients .intro {
     margin-bottom: 20px;
   }
-  /* line 457, _breakpoints.scss */
+  /* line 473, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 50px auto;
   }
-  /* line 460, _breakpoints.scss */
+  /* line 476, _breakpoints.scss */
   .template-product .ingredients .row .columns.left-text {
     padding-left: 10%;
   }
-  /* line 463, _breakpoints.scss */
+  /* line 479, _breakpoints.scss */
   .template-product .ingredients .row .columns.right-text {
     padding-right: 10%;
   }
-  /* line 468, _breakpoints.scss */
+  /* line 484, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     top: -2px;
   }
-  /* line 473, _breakpoints.scss */
+  /* line 489, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -49px;
   }
-  /* line 478, _breakpoints.scss */
+  /* line 494, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: 42px;
   }
-  /* line 483, _breakpoints.scss */
+  /* line 499, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: -37px;
   }
-  /* line 488, _breakpoints.scss */
+  /* line 504, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: 24px;
   }
-  /* line 493, _breakpoints.scss */
+  /* line 509, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -57px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 507, _breakpoints.scss */
+  /* line 523, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 47px;
     line-height: 50px;
     margin-top: 63px;
   }
-  /* line 512, _breakpoints.scss */
+  /* line 528, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 22px;
     line-height: 26px;
     max-width: 280px;
     margin-bottom: 50px;
   }
-  /* line 518, _breakpoints.scss */
+  /* line 534, _breakpoints.scss */
   .template-index .slider .slide .caption a.button {
     font-size: 18px;
     line-height: 15px;
   }
 
-  /* line 530, _breakpoints.scss */
+  /* line 546, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     top: -91px;
   }
-  /* line 535, _breakpoints.scss */
+  /* line 551, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -24px;
   }
-  /* line 540, _breakpoints.scss */
+  /* line 556, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -44px;
   }
 }
 @media only screen and (min-width: 1120px) {
-  /* line 554, _breakpoints.scss */
+  /* line 570, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 57px;
     line-height: 57px;
     margin-top: 46px;
   }
-  /* line 559, _breakpoints.scss */
+  /* line 575, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 23px;
     line-height: 29px;
@@ -1974,13 +1993,13 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 578, _breakpoints.scss */
+  /* line 594, _breakpoints.scss */
   .template-index .slider .slide .caption h2.title {
     font-size: 57px;
     line-height: 57px;
     margin-top: 20px;
   }
-  /* line 583, _breakpoints.scss */
+  /* line 599, _breakpoints.scss */
   .template-index .slider .slide .caption h3.sub-title {
     font-size: 25px;
     line-height: 30px;
@@ -1988,83 +2007,83 @@ p {
     margin-bottom: 50px;
   }
 
-  /* line 595, _breakpoints.scss */
+  /* line 611, _breakpoints.scss */
   .template-product .ingredients .intro {
     margin-bottom: 80px;
   }
-  /* line 598, _breakpoints.scss */
+  /* line 614, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 100px auto;
   }
-  /* line 601, _breakpoints.scss */
+  /* line 617, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 138%;
     top: -98px;
   }
-  /* line 607, _breakpoints.scss */
+  /* line 623, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -83px;
   }
-  /* line 612, _breakpoints.scss */
+  /* line 628, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: -10px;
   }
-  /* line 617, _breakpoints.scss */
+  /* line 633, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: -92px;
   }
-  /* line 622, _breakpoints.scss */
+  /* line 638, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: -29px;
   }
-  /* line 627, _breakpoints.scss */
+  /* line 643, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -90px;
   }
 }
 @media only screen and (min-width: 1300px) {
-  /* line 639, _breakpoints.scss */
+  /* line 655, _breakpoints.scss */
   .template-product .ingredients .row {
     margin: 120px auto;
   }
-  /* line 641, _breakpoints.scss */
+  /* line 657, _breakpoints.scss */
   .template-product .ingredients .row.coconut {
     margin-top: 0;
   }
-  /* line 643, _breakpoints.scss */
+  /* line 659, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 118%;
     top: -40px;
   }
-  /* line 649, _breakpoints.scss */
+  /* line 665, _breakpoints.scss */
   .template-product .ingredients .row.cardamom img {
     top: -101px;
   }
-  /* line 654, _breakpoints.scss */
+  /* line 670, _breakpoints.scss */
   .template-product .ingredients .row.cinnamon img {
     top: -30px;
   }
-  /* line 659, _breakpoints.scss */
+  /* line 675, _breakpoints.scss */
   .template-product .ingredients .row.cloves img {
     top: -103px;
   }
-  /* line 664, _breakpoints.scss */
+  /* line 680, _breakpoints.scss */
   .template-product .ingredients .row.nutmeg img {
     top: -25px;
   }
-  /* line 669, _breakpoints.scss */
+  /* line 685, _breakpoints.scss */
   .template-product .ingredients .row.honey img {
     top: -116px;
   }
 }
 @media only screen and (min-width: 1350px) {
-  /* line 683, _breakpoints.scss */
+  /* line 699, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     top: -94px;
   }
 }
 @media only screen and (min-width: 1490px) {
-  /* line 697, _breakpoints.scss */
+  /* line 713, _breakpoints.scss */
   .template-product .ingredients .row.coconut img {
     width: 107%;
     top: -99px;
